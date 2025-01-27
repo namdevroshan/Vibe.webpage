@@ -39,15 +39,18 @@
 
 .navigation {
     display: flex;
-    gap: 20px;
+    align-items: center; /* Ensures vertical alignment */
+    justify-content: center; /* Ensures proper spacing in a row */
+    gap: 30px; /* Adjust spacing between links */
     font-size: 1.3rem;
 }
 
 .navigation a {
     text-decoration: none;
-    color: #000;
+    color: #02297D;
     font-weight: 900;
     transition: color 0.3s ease;
+    padding: 5px 10px; /* Adds clickable padding */
 }
 
 .navigation a:hover {
@@ -56,7 +59,8 @@
 
 .cta {
     display: flex;
-    gap: 10px;
+    align-items: center; /* Vertical alignment */
+    gap: 10px; /* Space between buttons */
 }
 
 .cta button {
@@ -95,7 +99,102 @@
     background-color: #000;
 }
 
-/* Mobile Styles */
+/* Dropdown Adjustments */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dropdown-toggle {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.dropdown-container{
+    width: 620px;
+}
+
+.dropdown:hover .dropdown-toggle {
+    color: #267CFC;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10;
+    min-width: 400px; /* Adjust for image width */
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between image and links */
+    padding: 10px;
+    flex-direction: row; /* Ensure image is on the left */
+}
+
+.dropdown-image {
+    float: left;
+    width: auto; /* Increased size of the image */
+    height: 350px;
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between links */
+}
+
+.dropdown-links a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-links a i {
+    font-size: 18px;
+    margin-right: 12px;
+    color: #267CFC;
+    transition: color 0.3s ease;
+}
+
+.dropdown-links a:hover {
+    background-color: #267CFC;
+    color: #fff;
+}
+
+.dropdown-links a:hover i {
+    color: #fff;
+}
+
+
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .navigation {
         display: none;
@@ -115,73 +214,6 @@
     .menu-icon {
         display: flex;
     }
-}
-/* Dropdown Menu Styles */
-/* Dropdown Menu Styles */
-.dropdown {
-    position: relative;
-    display: inline-block;
-    
-}
-
-.dropdown .dropdown-toggle {
-    text-decoration: none;
-    color: #000;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.dropdown:hover .dropdown-toggle {
-    color: #267CFC;
-}
-
-.dropdown .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    z-index: 10;
-    min-width: 220px;
-    padding: 10px 0;
-    
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown .dropdown-menu a {
-    display: flex;
-    align-items: center;
-    padding: 12px 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    font-size: 15px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.dropdown .dropdown-menu a i {
-    font-size: 18px;
-    margin-right: 12px;
-    color: #267CFC;
-    transition: color 0.3s ease;
-}
-
-.dropdown .dropdown-menu a:hover {
-    background-color: #267CFC;
-    color: #fff;
-}
-
-.dropdown .dropdown-menu a:hover i {
-    color: #fff;
 }
 
 
@@ -399,7 +431,7 @@
 
 .features-section p {
     color: #333;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
@@ -438,12 +470,16 @@
     background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
     color: #ffffff;
     border-radius: 50%;
-    width: 50px; /* Slightly larger for better visibility */
-    height: 50px;
+    width: 60px; /* Slightly larger for better visibility */
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
+}
+.feature-icon-img1{
+    width: 30px;
+    height: 36px;
 }
 
 .feature-title {
@@ -474,9 +510,13 @@
     }
 
     .feature-icon {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
+    .feature-icon-img1{
+    width: 26px;
+    height: 32px;
+}
 
     .feature-title {
         font-size: 1.1rem;
@@ -517,108 +557,171 @@
     }
 }
 
-        .data-integration-section {
-            position: relative;
-            height: 567px;
-            
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 50px;
-            background-color: #ffffff;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin: 50px auto;
-            max-width: 1200px;
-        }
+.data-integration-section {
+    position: relative;
+    height: auto; /* Allow height to adjust dynamically */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 50px auto;
+    max-width: 1200px;
+    flex-wrap: wrap; /* Ensures wrapping for smaller screens */
+    gap: 30px;
+}
 
-        .content {
-            max-width: 50%;
-        }
+.content {
+    max-width: 50%;
+}
 
-        .content h2 {
-            font-size: 3rem;
-            color: #267CFC;
-            margin-bottom: 15px;
-        }
+.content h2 {
+    font-size: 2.5rem;
+    color: #267CFC;
+    margin-bottom: 15px;
+}
 
-        .content p {
-            font-size: 1rem;
-            color: #6c757d;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
+.content p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
 
-        .content button {
-            background: linear-gradient(90deg, #E695CD, #A474E8,#65B3E1);
-            color: #ffffff;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-        }
+.content button {
+    background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
 
-        .content button:hover {
-            background-color: #254243;
-        }
+.content button:hover {
+    background-color: #254243;
+}
 
-        .image {
-            max-width: 45%;
-            text-align: center;
-        }
+.image {
+    max-width: 45%;
+    text-align: center;
+}
 
-        .image img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
+.image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
 
-        @media (max-width: 768px) {
-            .data-integration-section {
-                flex-direction: column;
-                text-align: center;
-            }
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .data-integration-section {
+        padding: 30px;
+    }
 
-            .content {
-                max-width: 100%;
-                margin-bottom: 30px;
-            }
+    .content h2 {
+        font-size: 2rem;
+    }
 
-            .image {
-                max-width: 100%;
-            }
-        }
+    .content p {
+        font-size: 0.9rem;
+    }
+
+    .content button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .image {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .data-integration-section {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center;
+    }
+
+    .content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .content h2 {
+        font-size: 1.8rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+
+    .content button {
+        font-size: 0.8rem;
+        padding: 8px 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .data-integration-section {
+        padding: 20px;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
+
+    .content button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .image {
+        max-width: 100%;
+    }
+}
+
+
         .mf-container {
-      text-align: center;
-      padding: 20px;
-      background-color: #F9FAFB;
-      height: 376px;
-    }
-    
-    .mf-header {
-      font-size: 3rem;
-      font-weight: bold;
-      color: #267CFC;
-    }
+            min-height: 512px; 
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F9FAFB;
+}
 
-    .mf-subheader {
-      font-size: 16px;
-      color: #777;
-      margin: 10px 0 20px;
-    }
+.mf-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #267CFC;
+    margin-bottom: 10px;
+}
 
-    .mf-card-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    
-    
+.mf-subheader {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
 
-    .mf-card {
+.mf-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Enable wrapping */
+    gap: 20px;
+}
 
-        position: relative;
+.mf-card {
+    position: relative;
     background-color: #ffffff;
     border: 1px solid #e9ecef;
     border-radius: 8px;
@@ -632,62 +735,334 @@
     flex-direction: column;
     gap: 10px;
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
-    }
-    .mf-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    }
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-    .mf-card-icon {
-        background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
+.mf-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mf-card-icon {
+    background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
     color: #ffffff;
     border-radius: 50%;
-    width: 50px; /* Slightly larger for better visibility */
-    height: 50px;
+    width: 60px; /* Slightly larger for better visibility */
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
+}
+
+.mf-card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #267CFC;
+}
+
+.mf-card-description {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mf-container {
+        padding: 30px 10px;
+    }
+
+    .mf-header {
+        font-size: 2rem;
+    }
+
+    .mf-subheader {
+        font-size: 0.9rem;
+    }
+
+    .mf-card-container {
+        gap: 15px;
+    }
+
+    .mf-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .mf-card-icon {
+        width: 40px;
+        height: 40px;
     }
 
     .mf-card-title {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #267CFC;
+        font-size: 1.1rem;
     }
 
     .mf-card-description {
-      font-size: 14px;
-      color: #555;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mf-container {
+        padding: 20px 5px;
     }
 
-        .cta-section {
-            text-align: center;
-            align-items: center;
-            padding: 40px;
-            background-color: #ffffff;
-            height: 452px;
-        }
-        .cta-section button {
-            padding: 10px 20px;
-            background-color: #2f4b4e;
-            color: white;
-            border: none;
-            font-size: 1rem;
-            cursor: pointer;
-        }
+    .mf-header {
+        font-size: 1.8rem;
+    }
 
-        footer {
-            background-color: #267CFC;
-            color: #fff;
-            padding: 40px;
-            text-align: center;
-        }
-        footer p {
-            margin: 10px 0;
-        }
+    .mf-subheader {
+        font-size: 0.85rem;
+    }
+
+    .mf-card-container {
+        gap: 10px;
+    }
+
+    .mf-card {
+        padding: 10px;
+    }
+
+    .mf-card-title {
+        font-size: 1rem;
+    }
+
+    .mf-card-description {
+        font-size: 0.8rem;
+    }
+}
+
+
+.cta-section {
+    height: 454px;
+        text-align: center;
+        padding: 60px 20px;
+        background-color: #fff;
+    }
+
+    .cta-content h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #267CFC;
+        margin-bottom: 10px;
+    }
+
+    .cta-content p {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .cta-buttons button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    .cta-buttons .primary {
+        background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
+        color: #fff;
+    }
+
+    .cta-buttons .secondary {
+        background-color: #e9ecef;
+        color: #000;
+    }
+
+    .logo-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .logo-item {
+        background-color: #f8fafc;
+        color: #6366f1;
+        font-weight: 700;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        border-radius: 8px;
+    }
+
+    .footer {
+    background-color: #1e293b;
+    color: #cbd5e1;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-logo .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6366f1;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-links h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #cbd5e1;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #334155;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-container {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links div {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 15px;
+        font-size: 0.8rem;
+    }
+
+    .footer-logo .logo {
+        font-size: 1.2rem;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+    .footer-links div {
+        min-width: 100%;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-logo .logo {
+        font-size: 1rem;
+    }
+
+    .footer-links h4 {
+        font-size: 0.9rem;
+    }
+
+    .footer-links a {
+        font-size: 0.8rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.7rem;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -700,13 +1075,19 @@
             <nav class="navigation">
                 <a href="#">Solutions</a>
                 <div class="dropdown">
-                    <a href="#" class="dropdown-toggle" style="font-size: 1.3rem">Platform</a>
+                    <a href="#" class="dropdown-toggle" style="font-size: 1.3rem","color: #02297D;">Platform</a>
                     <div class="dropdown-menu">
-                        <a href="#"><i class="fa fa-cloud"></i> Data Extraction</a>
-                        <a href="#"><i class="fa fa-code"></i> Data Transformation</a>
-                        <a href="#"><i class="fa fa-database"></i> Data Modeling and Quality</a>
-                        <a href="#"><i class="fa fa-shield-alt"></i> Workflow Scheduling</a>
-                        <a href="#"><i class="fa fa-cogs"></i> Seamless Integration</a>
+                        <div class="dropdown-container">
+                            <img src="IMG@2x.png" alt="Isometric Design" class="dropdown-image">
+                            <div class="dropdown-links">
+                                <a href="index.html"><i class="fa fa-cloud"></i> Introduction</a>
+                                <a href="Extraction.html"><i class="fa fa-cloud"></i> Data Extraction</a>
+                                <a href="Transformation.html"><i class="fa fa-code"></i> Data Transformation</a>
+                                <a href="Modeling.html"><i class="fa fa-database"></i> Data Modeling and Quality</a>
+                                <a href="Workflow.html"><i class="fa fa-shield-alt"></i> Workflow Scheduling</a>
+                                <a href="Management.html"><i class="fa fa-cogs"></i> Master Data Management</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <a href="#">Resources</a>
@@ -735,14 +1116,14 @@
       </div>
     <div class="hero-content">
         <h1>Healthcare Data Platform on Microsoft Fabric </h1>
-        <p>Unlock the potential of your healthcare data with our Microsoft Fabric-powered platform. Enable secure data integration, advanced analytics, and seamless collaboration for better healthcare outcomes.</p>
+        <p>Our Healthcare Data Platform, built on Microsoft Fabric, is a comprehensive cloud-based data warehouse solution specifically designed for the NHS (National Health Service). It provides faster data flow, compliance with NHS data models, integration with CDS (Commissioning Data Sets) and HRG (Healthcare Resource Groups), and delivers actionable KPIs. </p>
         <div class="buttons">
             <button class="primary">Get Started</button>
             <button class="secondary">Watch Demo</button>
         </div>
     </div>
     <div class="hero-image">
-        <img src="Group 1000000948@2x.png" alt="Hero Section" />
+        <img src="herosectioimg.png" alt="Hero Section" />
     </div>
 </section>
 
@@ -757,7 +1138,9 @@
                 <div class="wave"></div>
                 <div class="wave"></div>
               </div>
-            <div class="feature-icon">&#128200;</div>
+            <div class="feature-icon">
+                <img class="feature-icon-img1" src="I@1x.png" alt="Hero Section" />
+            </div>
             <div class="feature-title">Real-time Analytics</div>
             <div class="feature-description">Monitor healthcare metrics in real-time with advanced analytics powered by Microsoft Fabric.</div>
         </div>
@@ -768,9 +1151,11 @@
                 <div class="wave"></div>
                 <div class="wave"></div>
               </div>
-            <div class="feature-icon">&#128449;</div>
-            <div class="feature-title">Data Integration</div>
-            <div class="feature-description">Seamlessly connect and integrate data from multiple healthcare systems and sources.</div>
+              <div class="feature-icon">
+                <img class="feature-icon-img1" src="fast dtat flowic.png" alt="Hero Section" />
+            </div>
+            <div class="feature-title">Faster Data Flow </div>
+            <div class="feature-description">Optimized for rapid data ingestion and processing, enabling timely clinical decision-making. </div>
         </div>
         <div class="feature-card">
             <div class="background">
@@ -779,9 +1164,11 @@
                 <div class="wave"></div>
                 <div class="wave"></div>
               </div>
-            <div class="feature-icon">&#128274;</div>
-            <div class="feature-title">HIPAA Compliance</div>
-            <div class="feature-description">Enterprise-grade security and compliance features to protect sensitive healthcare data.</div>
+              <div class="feature-icon">
+                <img class="feature-icon-img1" src="NHS data modelic.png" alt="Hero Section" />
+            </div>
+            <div class="feature-title">NHS Data Models </div>
+            <div class="feature-description">Adheres to NHS-specific structures like CDS and HRG for seamless compatibility with reporting frameworks. </div>
         </div>
         <div class="feature-card">
             <div class="background">
@@ -790,9 +1177,11 @@
                 <div class="wave"></div>
                 <div class="wave"></div>
               </div>
-            <div class="feature-icon">&#129504;</div>
-            <div class="feature-title">AI Insights</div>
-            <div class="feature-description">Leverage artificial intelligence to uncover patterns and predict healthcare outcomes.</div>
+              <div class="feature-icon">
+                <img class="feature-icon-img1" src="KPI icon.png" alt="Hero Section" />
+            </div>
+            <div class="feature-title">KPI Generation </div>
+            <div class="feature-description">Provides actionable KPIs such as patient wait times, bed occupancy, and resource utilization. </div>
         </div>
     </div>
 </section>
@@ -805,18 +1194,18 @@
       </div>
    
         <div class="content ">
-            <h2>Microsoft Fabric Data Integration</h2>
-            <p>Leverage Microsoft Fabric's powerful data integration capabilities to connect your healthcare systems seamlessly. Unify EHR data, medical imaging, and patient records in a secure, compliant environment.</p>
+            <h2>Data Integration with Microsoft Fabric </h2>
+            <p>Microsoft Fabric enables seamless integration with leading EPR systems like Cerner, Epic, and Lorenzo, ensuring interoperability with clinical workflows. With real-time, bidirectional data flow and compliance with HL7 and FHIR standards, it facilitates secure and efficient data exchange.</p>
             <button>Learn More</button>
         </div>
     
     <div class="image">
-        <img src="image-placeholder.png" alt="Data Integration Illustration">
+        <img src="Data integration.png" alt="Data Integration Illustration">
     </div>
 </section>
 <div class="mf-container">
-    <div class="mf-header">Microsoft Fabric Security & Compliance</div>
-    <div class="mf-subheader">Enterprise-grade security powered by Microsoft Fabric</div>
+    <div class="mf-header">Health Care Data Platform's Benefits</div>
+    <div class="mf-subheader">This platform empowers healthcare providers with a powerful and flexible data solution, ensuring better patient care</div>
     <div class="mf-card-container">
       <div class="mf-card">
         <div class="background">
@@ -825,9 +1214,11 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">🔒</div>
-        <div class="mf-card-title">HIPAA Compliant</div>
-        <div class="mf-card-description">Fully compliant with healthcare data protection regulations</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="efficiency.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Efficiency</div>
+        <div class="mf-card-description">Streamlines data integration, transformation, and modeling, reducing time-to-insight for healthcare organizations.</div>
       </div>
       <div class="mf-card">
         <div class="background">
@@ -836,9 +1227,11 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">🛡️</div>
-        <div class="mf-card-title">End-to-End Encryption</div>
-        <div class="mf-card-description">Advanced encryption for data at rest and in transit</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="Scalability.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Scalability</div>
+        <div class="mf-card-description">Built on Microsoft Fabric, the platform can scale to handle the complex and growing needs of NHS trusts and hospitals.</div>
       </div>
       <div class="mf-card">
         <div class="background">
@@ -847,22 +1240,97 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">👤</div>
-        <div class="mf-card-title">Access Control</div>
-        <div class="mf-card-description">Role-based access control and audit logging</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="Interoperability.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Interoperability</div>
+        <div class="mf-card-description">Ensures seamless integration with existing systems and compliance with industry standards like HL7, FHIR, and NHS-specific datasets.</div>
+      </div>
+      <div class="mf-card">
+        <div class="background">
+            <!-- Adding multiple animated layers -->
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="cost saving ic.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Cost Savings</div>
+        <div class="mf-card-description">Reduces administrative overhead by automating workflows and standardizing processes, delivering a high ROI for healthcare organizations.</div>
       </div>
     </div>
   </div>
 
-<section class="cta-section">
-    <h2>Ready to Transform Your Healthcare Data?</h2>
-    <button>Request Demo</button>
-    <button>Contact Sales</button>
+  <section class="cta-section">
+    <div class="cta-content">
+        
+        <h2>Ready to Transform Your Healthcare Data?</h2>
+        <p>Join leading healthcare organizations already using our platform </p>
+        <div class="cta-buttons">
+            <button class="primary">Request Demo</button>
+            <button class="secondary">Contact Sales</button>
+        </div>
+    </div>
+    <div class="logo-grid">
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+    </div>
 </section>
 
-<footer>
-    <p>Transforming healthcare through Microsoft Fabric's advanced data analytics and integration capabilities.</p>
-    <p>&copy; 2025 Healthcare Data Platform. All rights reserved.</p>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <div class="logo">LOGO</div>
+            <p>
+                Simplifying healthcare data extraction with advanced automation and security features.
+            </p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Twitter">TW</a>
+                <a href="#" aria-label="LinkedIn">IN</a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div>
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Data Integration</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Compliance</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Guides</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Healthcare Data Platform. All rights reserved.</p>
+    </div>
 </footer>
 
 </body>
