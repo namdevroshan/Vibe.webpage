@@ -1,0 +1,69 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1e1e2f;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .button-container {
+    position: relative;
+  }
+  
+  .data-animated-button {
+    position: relative;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #ff4e50, #f9d423);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: background 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .data-animated-button::before,
+  .data-animated-button::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ff4e50;
+    background: #fff;
+    transition: transform 0.5s ease;
+    z-index: 1;
+    clip-path: inset(0 100% 0 0);
+  }
+  
+  .data-animated-button::after {
+    color: #f9d423;
+    clip-path: inset(0 0 0 100%);
+  }
+  
+  .data-animated-button:hover {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .data-animated-button:hover::before {
+    clip-path: inset(0 0 0 0);
+  }
+  
+  .data-animated-button:hover::after {
+    clip-path: inset(0 0 0 0);
+    transform: translateY(-100%);
+  }
+  
