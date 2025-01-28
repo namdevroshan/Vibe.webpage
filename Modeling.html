@@ -24,11 +24,12 @@
 
 .header-container {
     display: flex;
+    flex: 1;
+    width: 100%;
+    background-color: #fdfafa;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    max-width: 1200px;
-    margin: auto;
+  
 }
 
 .logo {
@@ -184,7 +185,7 @@
 }
 
 .dropdown-links a:hover {
-    background-color: #267CFC;
+    background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
     color: #fff;
 }
 
@@ -835,6 +836,7 @@
 
 
 .cta-section {
+    position: relative;
     height: 454px;
         text-align: center;
         padding: 60px 20px;
@@ -1069,8 +1071,8 @@
 
     <header>
         <div class="header-container">
-            <div class="logo">
-                <img src="Logo.png" alt="Healthcare Data Platform Logo" style="height: 50px;">
+            <div class="logo" style="margin-left: 10px;">
+                <img src="vibelogo2.png" alt="Healthcare Data Platform Logo" style="height: 60px;">
             </div>
             <nav class="navigation">
                 <a href="#">Solutions</a>
@@ -1091,10 +1093,10 @@
                     </div>
                 </div>
                 <a href="#">Resources</a>
-                <a href="#">Contact</a>
+                <a href="https://www.saa.ai/contact.php" target="_parent">Contact</a>
             </nav>
-            <div class="cta">
-                <button class="start">Watch Free Demo</button>
+            <div class="cta" style="margin-right: 20px;">
+                <button class="start">Watch Demo</button>
             </div>
             <div class="menu-icon">
                 <!-- Hamburger Menu Icon -->
@@ -1125,7 +1127,7 @@
         </div>
     </div>
     <div class="hero-image">
-        <img src="Group 1000000948@2x.png" alt="Hero Section" />
+        <img src="flow-diagram-data-warehouse-automation-from-data-extraction-report-generation_1314467-172889-removebg-preview.png" alt="Hero Section" />
     </div>
 </section>
 
@@ -1141,9 +1143,8 @@
                 <div class="wave"></div>
               </div>
             <div class="feature-icon">&#128200;</div>
-            <div class="feature-title">Visual Model Designer</div>
-            <div class="feature-description">Interactive interface for creating and 
-                managing healthcare data models</div>
+            <div class="feature-title">Custom Models</div>
+            <div class="feature-description">Design data models aligned with NHS standards like CDS and HRG frameworks. </div>
         </div>
         <div class="feature-card">
             <div class="background">
@@ -1153,9 +1154,8 @@
                 <div class="wave"></div>
               </div>
             <div class="feature-icon">&#128449;</div>
-            <div class="feature-title">Schema Validation</div>
-            <div class="feature-description">Automatic validation of data models 
-                against industry standards</div>
+            <div class="feature-title">Quality Metrics</div>
+            <div class="feature-description"> Assign and monitor quality metrics to ensure data accuracy and compliance.</div>
         </div>
         <div class="feature-card">
             <div class="background">
@@ -1165,9 +1165,8 @@
                 <div class="wave"></div>
               </div>
             <div class="feature-icon">&#128274;</div>
-            <div class="feature-title">Version Control</div>
-            <div class="feature-description">Track changes and maintain multiple 
-                versions of data models</div>
+            <div class="feature-title">NHS-Specific Datasets</div>
+            <div class="feature-description">Supports NHS datasets, such as MSDS, MHSDS, and SUS submissions. </div>
         </div>
         <div class="feature-card">
             <div class="background">
@@ -1177,9 +1176,8 @@
                 <div class="wave"></div>
               </div>
             <div class="feature-icon">&#129504;</div>
-            <div class="feature-title">Data Governance</div>
-            <div class="feature-description">Enforce data quality and compliance 
-                standards across models</div>
+            <div class="feature-title">Predictive Analytics</div>
+            <div class="feature-description">Use predictive modeling to forecast patient outcomes and operational demands. </div>
         </div>
     </div>
 </section>
@@ -1196,17 +1194,17 @@
             <p>Our data modeling platform uses AI to help you create efficient and compliant 
                 healthcare data models. With smart suggestions and automated validation, you can 
                 ensure your data architecture meets industry standards while maintaining optimal 
-                performance.</p>
+                performance.<p>
             <button>Learn More</button>
         </div>
     
     <div class="image">
-        <img src="image-placeholder.png" alt="Data Integration Illustration">
+        <img src="Data integration.png" alt="Data Integration Illustration">
     </div>
 </section>
 <div class="mf-container">
-    <div class="mf-header">Enterprise Data Modeling Capabilities</div>
-    <div class="mf-subheader">Advanced features for healthcare data architecture</div>
+    <div class="mf-header">Data Modeling Benefits</div>
+    <div class="mf-subheader">This platform empowers healthcare providers with a powerful and flexible data solution, ensuring better patient care</div>
     <div class="mf-card-container">
       <div class="mf-card">
         <div class="background">
@@ -1215,10 +1213,11 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">🔒</div>
-        <div class="mf-card-title">Model Templates</div>
-        <div class="mf-card-description">Pre-built templates for common healthcare data 
-            scenarios</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="efficiency.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Reliable Data</div>
+        <div class="mf-card-description">Guarantees the accuracy and reliability of data for decision-making.</div>
       </div>
       <div class="mf-card">
         <div class="background">
@@ -1227,10 +1226,11 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">🛡️</div>
-        <div class="mf-card-title">Compliance Checking</div>
-        <div class="mf-card-description">Automated validation against HIPAA and FHIR 
-            standards</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="Scalability.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Compliance</div>
+        <div class="mf-card-description">Ensures compliance with NHS regulations for regulatory peace of mind.</div>
       </div>
       <div class="mf-card">
         <div class="background">
@@ -1239,24 +1239,44 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">👤</div>
-        <div class="mf-card-title">Model Analytics</div>
-        <div class="mf-card-description">Performance insights and optimization 
-            recommendations</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="Interoperability.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Forecasting</div>
+        <div class="mf-card-description">Provides advanced predictive insights to drive proactive care and planning. </div>
       </div>
+
     </div>
   </div>
 
-<section class="cta-section">
-    <h2>Ready to Transform Your Healthcare Data Architecture?</h2>
-    <button>Request Demo</button>
-    <button>Contact Sales</button>
+  <section class="cta-section">
+     <div class="background">
+            <!-- Adding multiple animated layers -->
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
+    <div class="cta-content">
+        
+        <h2>Ready to Transform Your Healthcare Data Architecture?</h2>
+        <p>Join healthcare organizations building robust and compliant data models </p>
+        <div class="cta-buttons">
+            <button class="primary">Request Demo</button>
+            <button class="secondary">Contact Sales</button>
+        </div>
+    </div>
+    <div class="logo-grid">
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+    </div>
 </section>
 
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-logo">
-            <div class="logo">LOGO</div>
+            <img src="vibelogo2.png" alt="Healthcare Data Platform Logo" style="height: 50px;">
             <p>
                 Simplifying healthcare data extraction with advanced automation and security features.
             </p>

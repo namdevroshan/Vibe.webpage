@@ -24,11 +24,12 @@
 
 .header-container {
     display: flex;
+    flex: 1;
+    width: 100%;
+    background-color: #fdfafa;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    max-width: 1200px;
-    margin: auto;
+  
 }
 
 .logo {
@@ -184,7 +185,7 @@
 }
 
 .dropdown-links a:hover {
-    background-color: #267CFC;
+    background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
     color: #fff;
 }
 
@@ -835,6 +836,7 @@
 
 
 .cta-section {
+    position: relative;
     height: 454px;
         text-align: center;
         padding: 60px 20px;
@@ -1069,8 +1071,8 @@
 
     <header>
         <div class="header-container">
-            <div class="logo">
-                <img src="Logo.png" alt="Healthcare Data Platform Logo" style="height: 50px;">
+            <div class="logo" style="margin-left: 10px;">
+                <img src="vibelogo2.png" alt="Healthcare Data Platform Logo" style="height: 60px;">
             </div>
             <nav class="navigation">
                 <a href="#">Solutions</a>
@@ -1091,10 +1093,10 @@
                     </div>
                 </div>
                 <a href="#">Resources</a>
-                <a href="#">Contact</a>
+                <a href="https://www.saa.ai/contact.php" target="_parent">Contact</a>
             </nav>
-            <div class="cta">
-                <button class="start">Watch Free Demo</button>
+            <div class="cta" style="margin-right: 20px;">
+                <button class="start">Watch Demo</button>
             </div>
             <div class="menu-icon">
                 <!-- Hamburger Menu Icon -->
@@ -1127,7 +1129,7 @@
         </div>
     </div>
     <div class="hero-image">
-        <img src="Group 1000000948@2x.png" alt="Hero Section" />
+        <img src="flow-diagram-data-warehouse-automation-from-data-extraction-report-generation_1314467-172889-removebg-preview.png" alt="Hero Section" />
     </div>
 </section>
 
@@ -1143,10 +1145,8 @@
                 <div class="wave"></div>
               </div>
             <div class="feature-icon">&#128200;</div>
-            <div class="feature-title">Data Cleansing</div>
-            <div class="feature-description">Automated data cleaning and 
-                standardization with intelligent error 
-                detection and correction</div>
+            <div class="feature-title">Custom Transformation Tools</div>
+            <div class="feature-description">Supports SQL, PowerShell, and Python scripts for tailored data handling. </div>
         </div>
         <div class="feature-card">
             <div class="background">
@@ -1156,10 +1156,8 @@
                 <div class="wave"></div>
               </div>
             <div class="feature-icon">&#128449;</div>
-            <div class="feature-title">Data Mapping</div>
-            <div class="feature-description">Advanced mapping tools to 
-                standardize data across different 
-                healthcare systems and formats</div>
+            <div class="feature-title">Standardized Insights</div>
+            <div class="feature-description">Converts raw data into actionable insights while adhering to NHS-specific standards.</div>
         </div>
         <div class="feature-card">
             <div class="background">
@@ -1169,10 +1167,8 @@
                 <div class="wave"></div>
               </div>
             <div class="feature-icon">&#128274;</div>
-            <div class="feature-title">Data Enrichment</div>
-            <div class="feature-description">Enhance your data with additional 
-                context and insights from multiple 
-                trusted sources</div>
+            <div class="feature-title">Complex Data Logic</div>
+            <div class="feature-description">Handles complex transformations like merging datasets and cleaning data for analysis. </div>
         </div>
         <div class="feature-card">
             <div class="background">
@@ -1182,10 +1178,8 @@
                 <div class="wave"></div>
               </div>
             <div class="feature-icon">&#129504;</div>
-            <div class="feature-title">Quality Assurance</div>
-            <div class="feature-description">Comprehensive data quality checks 
-                and validation rules to ensure 
-                accuracy</div>
+            <div class="feature-title">Advanced Processing</div>
+            <div class="feature-description">Transforms data into formats suitable for predictive analytics and reporting. </div>
         </div>
     </div>
 </section>
@@ -1198,7 +1192,7 @@
       </div>
    
         <div class="content ">
-            <h2>Advanced Data Transformation Pipeline</h2>
+            <h2>Advanced Data Transformation Pipeline </h2>
             <p>Our sophisticated data transformation pipeline ensures your healthcare data is 
                 clean, standardized, and ready for analytics. With built-in quality checks and 
                 enrichment capabilities, you can trust your data for critical decision-making.</p>
@@ -1206,12 +1200,12 @@
         </div>
     
     <div class="image">
-        <img src="image-placeholder.png" alt="Data Integration Illustration">
+        <img src="Data integration.png" alt="Data Integration Illustration">
     </div>
 </section>
 <div class="mf-container">
-    <div class="mf-header">Transform with Confidence</div>
-    <div class="mf-subheader">Enterprise-grade data transformation capabilities</div>
+    <div class="mf-header">Data Transformation's Benefits</div>
+    <div class="mf-subheader">This platform empowers healthcare providers with a powerful and flexible data solution, ensuring better patient care</div>
     <div class="mf-card-container">
       <div class="mf-card">
         <div class="background">
@@ -1220,10 +1214,11 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">🔒</div>
-        <div class="mf-card-title">Real-time Processing</div>
-        <div class="mf-card-description">Transform data in real-time as it flows through your 
-            systems </div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="efficiency.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Data Clarity</div>
+        <div class="mf-card-description">Ensures clean, standardized data for better decision-making. </div>
       </div>
       <div class="mf-card">
         <div class="background">
@@ -1232,9 +1227,11 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">🛡️</div>
-        <div class="mf-card-title">Scalable Architecture</div>
-        <div class="mf-card-description">Handle large volumes of healthcare data with ease</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="Scalability.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Compliance</div>
+        <div class="mf-card-description">Adheres to NHS data standards for reliable and accurate insights. </div>
       </div>
       <div class="mf-card">
         <div class="background">
@@ -1243,23 +1240,44 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">👤</div>
-        <div class="mf-card-title">Custom Rules Engine</div>
-        <div class="mf-card-description">Define and implement custom transformation rules</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="Interoperability.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Enhanced Insights</div>
+        <div class="mf-card-description">Transforms raw data into valuable, actionable insights to improve patient outcomes.</div>
       </div>
+      
     </div>
   </div>
 
-<section class="cta-section">
-    <h2>Ready to Transform Your Healthcare Data?</h2>
-    <button>Request Demo</button>
-    <button>Contact Sales</button>
+  <section class="cta-section">
+     <div class="background">
+            <!-- Adding multiple animated layers -->
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
+    <div class="cta-content">
+        
+        <h2>Ready to Transform Your Healthcare Data?</h2>
+        <p>Join leading healthcare organizations using our data transformation platform</p>
+        <div class="cta-buttons">
+            <button class="primary">Request Demo</button>
+            <button class="secondary">Contact Sales</button>
+        </div>
+    </div>
+    <div class="logo-grid">
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+    </div>
 </section>
 
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-logo">
-            <div class="logo">LOGO</div>
+            <img src="vibelogo2.png" alt="Healthcare Data Platform Logo" style="height: 50px;">
             <p>
                 Simplifying healthcare data extraction with advanced automation and security features.
             </p>

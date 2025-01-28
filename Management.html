@@ -24,11 +24,12 @@
 
 .header-container {
     display: flex;
+    flex: 1;
+    width: 100%;
+    background-color: #fdfafa;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    max-width: 1200px;
-    margin: auto;
+  
 }
 
 .logo {
@@ -184,7 +185,7 @@
 }
 
 .dropdown-links a:hover {
-    background-color: #267CFC;
+    background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
     color: #fff;
 }
 
@@ -835,6 +836,7 @@
 
 
 .cta-section {
+    position: relative;
     height: 454px;
         text-align: center;
         padding: 60px 20px;
@@ -1069,8 +1071,8 @@
 
     <header>
         <div class="header-container">
-            <div class="logo">
-                <img src="Logo.png" alt="Healthcare Data Platform Logo" style="height: 50px;">
+            <div class="logo" style="margin-left: 10px;">
+                <img src="vibelogo2.png" alt="Healthcare Data Platform Logo" style="height: 60px;">
             </div>
             <nav class="navigation">
                 <a href="#">Solutions</a>
@@ -1091,10 +1093,10 @@
                     </div>
                 </div>
                 <a href="#">Resources</a>
-                <a href="#">Contact</a>
+                <a href="https://www.saa.ai/contact.php" target="_parent">Contact</a>
             </nav>
-            <div class="cta">
-                <button class="start">Watch Free Demo</button>
+            <div class="cta" style="margin-right: 20px;">
+                <button class="start">Watch Demo</button>
             </div>
             <div class="menu-icon">
                 <!-- Hamburger Menu Icon -->
@@ -1127,7 +1129,7 @@
         </div>
     </div>
     <div class="hero-image">
-        <img src="Group 1000000948@2x.png" alt="Hero Section" />
+        <img src="flow-diagram-data-warehouse-automation-from-data-extraction-report-generation_1314467-172889-removebg-preview.png" alt="Hero Section" />
     </div>
 </section>
 
@@ -1196,7 +1198,7 @@
       </div>
    
         <div class="content ">
-            <h2>Intelligent Master Data Management</h2>
+            <h2>Intelligent Master Data Management </h2>
             <p>Our MDM platform leverages AI and machine learning to automate data matching, 
                 merging, and quality control. Maintain consistent patient, provider, and facility data 
                 across your entire healthcare ecosystem while ensuring compliance with industry 
@@ -1205,12 +1207,13 @@
         </div>
     
     <div class="image">
-        <img src="image-placeholder.png" alt="Data Integration Illustration">
+        <img src="Data integration.png" alt="Data Integration Illustration">
     </div>
 </section>
+
 <div class="mf-container">
-    <div class="mf-header">Enterprise MDM Capabilities</div>
-    <div class="mf-subheader">Advanced features for healthcare master data management</div>
+    <div class="mf-header">Health Care Data Platform's Benefits</div>
+    <div class="mf-subheader">This platform empowers healthcare providers with a powerful and flexible data solution, ensuring better patient care</div>
     <div class="mf-card-container">
       <div class="mf-card">
         <div class="background">
@@ -1219,9 +1222,11 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">🔒</div>
-        <div class="mf-card-title">Data Matching</div>
-        <div class="mf-card-description">AI-powered entity resolution and duplicate detection</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="efficiency.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Efficiency</div>
+        <div class="mf-card-description">Streamlines data integration, transformation, and modeling, reducing time-to-insight for healthcare organizations.</div>
       </div>
       <div class="mf-card">
         <div class="background">
@@ -1230,10 +1235,11 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">🛡️</div>
-        <div class="mf-card-title">Data Hierarchies</div>
-        <div class="mf-card-description">Create and manage complex organizational 
-            relationships</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="Scalability.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Scalability</div>
+        <div class="mf-card-description">Built on Microsoft Fabric, the platform can scale to handle the complex and growing needs of NHS trusts and hospitals.</div>
       </div>
       <div class="mf-card">
         <div class="background">
@@ -1242,24 +1248,56 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">👤</div>
-        <div class="mf-card-title">Data Distribution</div>
-        <div class="mf-card-description">Seamless synchronization across all connected 
-            systems</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="Interoperability.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Interoperability</div>
+        <div class="mf-card-description">Ensures seamless integration with existing systems and compliance with industry standards like HL7, FHIR, and NHS-specific datasets.</div>
+      </div>
+      <div class="mf-card">
+        <div class="background">
+            <!-- Adding multiple animated layers -->
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="cost saving ic.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Cost Savings</div>
+        <div class="mf-card-description">Reduces administrative overhead by automating workflows and standardizing processes, delivering a high ROI for healthcare organizations.</div>
       </div>
     </div>
   </div>
 
-<section class="cta-section">
-    <h2>Ready to Transform Your Healthcare Data Management?</h2>
-    <button>Request Demo</button>
-    <button>Contact Sales</button>
+  <section class="cta-section">
+     <div class="background">
+            <!-- Adding multiple animated layers -->
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
+    <div class="cta-content">
+        
+        <h2>Ready to Transform Your Healthcare Data?</h2>
+        <p>Join leading healthcare organizations already using our platform </p>
+        <div class="cta-buttons">
+            <button class="primary">Request Demo</button>
+            <button class="secondary">Contact Sales</button>
+        </div>
+    </div>
+    <div class="logo-grid">
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+    </div>
 </section>
 
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-logo">
-            <div class="logo">LOGO</div>
+            <img src="vibelogo2.png" alt="Healthcare Data Platform Logo" style="height: 50px;">
             <p>
                 Simplifying healthcare data extraction with advanced automation and security features.
             </p>

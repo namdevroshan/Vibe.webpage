@@ -24,11 +24,12 @@
 
 .header-container {
     display: flex;
+    flex: 1;
+    width: 100%;
+    background-color: #fdfafa;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    max-width: 1200px;
-    margin: auto;
+  
 }
 
 .logo {
@@ -184,7 +185,7 @@
 }
 
 .dropdown-links a:hover {
-    background-color: #267CFC;
+    background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
     color: #fff;
 }
 
@@ -835,6 +836,7 @@
 
 
 .cta-section {
+    position: relative;
     height: 454px;
         text-align: center;
         padding: 60px 20px;
@@ -1069,8 +1071,8 @@
 
     <header>
         <div class="header-container">
-            <div class="logo">
-                <img src="Logo.png" alt="Healthcare Data Platform Logo" style="height: 50px;">
+            <div class="logo" style="margin-left: 10px;">
+                <img src="vibelogo2.png" alt="Healthcare Data Platform Logo" style="height: 60px;">
             </div>
             <nav class="navigation">
                 <a href="#">Solutions</a>
@@ -1091,10 +1093,10 @@
                     </div>
                 </div>
                 <a href="#">Resources</a>
-                <a href="#">Contact</a>
+                <a href="https://www.saa.ai/contact.php" target="_parent">Contact</a>
             </nav>
-            <div class="cta">
-                <button class="start">Watch Free Demo</button>
+            <div class="cta" style="margin-right: 20px;">
+                <button class="start">Watch Demo</button>
             </div>
             <div class="menu-icon">
                 <!-- Hamburger Menu Icon -->
@@ -1125,7 +1127,7 @@
         </div>
     </div>
     <div class="hero-image">
-        <img src="Group 1000000948@2x.png" alt="Hero Section" />
+        <img src="flow-diagram-data-warehouse-automation-from-data-extraction-report-generation_1314467-172889-removebg-preview.png" alt="Hero Section" />
     </div>
 </section>
 
@@ -1141,10 +1143,8 @@
                 <div class="wave"></div>
               </div>
             <div class="feature-icon">&#128200;</div>
-            <div class="feature-title">Visual Workflow Designer</div>
-            <div class="feature-description">Drag-and-drop interface for creating 
-                complex data workflows without 
-                coding</div>
+            <div class="feature-title">Flexible Scheduling</div>
+            <div class="feature-description">Customize workflows to run sequentially or in parallel to optimize performance. </div>
         </div>
         <div class="feature-card">
             <div class="background">
@@ -1154,10 +1154,8 @@
                 <div class="wave"></div>
               </div>
             <div class="feature-icon">&#128449;</div>
-            <div class="feature-title">Process Automation</div>
-            <div class="feature-description">Automate repetitive tasks and data 
-                processing with customizable 
-                workflows</div>
+            <div class="feature-title">Automated Updates</div>
+            <div class="feature-description">Automatically refresh data to ensure real-time availability for reporting and analytics. </div>
         </div>
         <div class="feature-card">
             <div class="background">
@@ -1167,9 +1165,8 @@
                 <div class="wave"></div>
               </div>
             <div class="feature-icon">&#128274;</div>
-            <div class="feature-title">Error Handling</div>
-            <div class="feature-description">Built-in error detection and recovery 
-                mechanisms for reliable processing</div>
+            <div class="feature-title">Error Detection</div>
+            <div class="feature-description">Continuously monitor workflows for potential bottlenecks or errors.</div>
         </div>
         <div class="feature-card">
             <div class="background">
@@ -1179,9 +1176,8 @@
                 <div class="wave"></div>
               </div>
             <div class="feature-icon">&#129504;</div>
-            <div class="feature-title">Monitoring & Alerts</div>
-            <div class="feature-description">Real-time monitoring and automated 
-                alerts for workflow status</div>
+            <div class="feature-title">Timely Data Delivery</div>
+            <div class="feature-description"> Guarantee that data is processed and ready when needed for accurate reporting.</div>
         </div>
     </div>
 </section>
@@ -1194,7 +1190,7 @@
       </div>
    
         <div class="content ">
-            <h2>Intelligent Workflow Orchestration</h2>
+            <h2>Intelligent Workflow Orchestration </h2>
             <p>Our workflow platform intelligently orchestrates your data processes, ensuring 
                 efficient execution and optimal resource utilization. With advanced scheduling and 
                 dependency management, your data workflows run smoothly and reliably.</p>
@@ -1202,12 +1198,12 @@
         </div>
     
     <div class="image">
-        <img src="image-placeholder.png" alt="Data Integration Illustration">
+        <img src="Data integration.png" alt="Data Integration Illustration">
     </div>
 </section>
 <div class="mf-container">
-    <div class="mf-header">Enterprise Workflow Capabilities</div>
-    <div class="mf-subheader">Powerful features for complex workflow management</div>
+    <div class="mf-header">Data Workflow Benefits</div>
+    <div class="mf-subheader">This platform empowers healthcare providers with a powerful and flexible data solution, ensuring better patient care</div>
     <div class="mf-card-container">
       <div class="mf-card">
         <div class="background">
@@ -1216,10 +1212,11 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">🔒</div>
-        <div class="mf-card-title">Workflow Scheduling</div>
-        <div class="mf-card-description">Schedule and coordinate workflows with advanced 
-            timing controls</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="efficiency.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Improved Efficiency</div>
+        <div class="mf-card-description">Reduces the need for manual intervention, speeding up processes. </div>
       </div>
       <div class="mf-card">
         <div class="background">
@@ -1228,10 +1225,11 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">🛡️</div>
-        <div class="mf-card-title">Version Control</div>
-        <div class="mf-card-description">Track and manage workflow versions with built-in 
-            versioning</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="Scalability.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Consistency</div>
+        <div class="mf-card-description">Ensures real-time data availability for critical decision-making.</div>
       </div>
       <div class="mf-card">
         <div class="background">
@@ -1240,24 +1238,44 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="mf-card-icon">👤</div>
-        <div class="mf-card-title">Workflow Analytics</div>
-        <div class="mf-card-description">Comprehensive insights into workflow performance 
-            and metrics</div>
+          <div class="feature-icon">
+            <img class="feature-icon-img1" src="Interoperability.png" alt="Hero Section" />
+        </div>
+        <div class="mf-card-title">Operational Excellence</div>
+        <div class="mf-card-description">Streamlines workflows to optimize performance and reduce downtime.</div>
       </div>
+      
     </div>
   </div>
 
-<section class="cta-section">
-    <h2>Ready to Automate Your Healthcare Data Workflows?</h2>
-    <button>Request Demo</button>
-    <button>Contact Sales</button>
+  <section class="cta-section">
+     <div class="background">
+            <!-- Adding multiple animated layers -->
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
+    <div class="cta-content">
+        
+        <h2>Ready to Transform Your Healthcare Data?</h2>
+        <p>Join leading healthcare organizations already using our platform </p>
+        <div class="cta-buttons">
+            <button class="primary">Request Demo</button>
+            <button class="secondary">Contact Sales</button>
+        </div>
+    </div>
+    <div class="logo-grid">
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+        <div class="logo-item">LOGO</div>
+    </div>
 </section>
 
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-logo">
-            <div class="logo">LOGO</div>
+            <img src="vibelogo2.png" alt="Healthcare Data Platform Logo" style="height: 50px;">
             <p>
                 Simplifying healthcare data extraction with advanced automation and security features.
             </p>
