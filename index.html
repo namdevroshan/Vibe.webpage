@@ -12,6 +12,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+        
 
         header {
     position: fixed;
@@ -1408,6 +1409,17 @@ height:100vh;
         }, 4000); // Minimum loader visibility duration
     });
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuIcon = document.querySelector('.menu-icon');
+        const navigation = document.querySelector('.navigation');
+
+        menuIcon.addEventListener('click', () => {
+            navigation.classList.toggle('active');
+        });
+    });
+</script>
+
 
 </body>
 </html>

@@ -1325,6 +1325,17 @@
         <p>© 2024 Healthcare Data Platform. All rights reserved.</p>
     </div>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuIcon = document.querySelector('.menu-icon');
+        const navigation = document.querySelector('.navigation');
+
+        menuIcon.addEventListener('click', () => {
+            navigation.classList.toggle('active');
+        });
+    });
+</script>
+
 
 </body>
 </html>

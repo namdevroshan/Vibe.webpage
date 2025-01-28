@@ -1142,7 +1142,9 @@
                 <div class="wave"></div>
                 <div class="wave"></div>
               </div>
-            <div class="feature-icon">&#128200;</div>
+            <div class="feature-icon">
+                <img class="feature-icon-img1" src="workflowic1.png" alt="Hero Section" />
+            </div>
             <div class="feature-title">Flexible Scheduling</div>
             <div class="feature-description">Customize workflows to run sequentially or in parallel to optimize performance. </div>
         </div>
@@ -1153,7 +1155,9 @@
                 <div class="wave"></div>
                 <div class="wave"></div>
               </div>
-            <div class="feature-icon">&#128449;</div>
+            <div class="feature-icon">
+                <img class="feature-icon-img1" src="automate.png" alt="Hero Section"  />
+            </div>
             <div class="feature-title">Automated Updates</div>
             <div class="feature-description">Automatically refresh data to ensure real-time availability for reporting and analytics. </div>
         </div>
@@ -1164,7 +1168,9 @@
                 <div class="wave"></div>
                 <div class="wave"></div>
               </div>
-            <div class="feature-icon">&#128274;</div>
+            <div class="feature-icon">
+                <img class="feature-icon-img1" src="KPI icon.png" alt="Hero Section" />
+            </div>
             <div class="feature-title">Error Detection</div>
             <div class="feature-description">Continuously monitor workflows for potential bottlenecks or errors.</div>
         </div>
@@ -1175,7 +1181,9 @@
                 <div class="wave"></div>
                 <div class="wave"></div>
               </div>
-            <div class="feature-icon">&#129504;</div>
+            <div class="feature-icon">
+                <img class="feature-icon-img1" src="realtime ac.png" alt="Hero Section" />
+            </div>
             <div class="feature-title">Timely Data Delivery</div>
             <div class="feature-description"> Guarantee that data is processed and ready when needed for accurate reporting.</div>
         </div>
@@ -1324,6 +1332,16 @@
         <p>© 2024 Healthcare Data Platform. All rights reserved.</p>
     </div>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuIcon = document.querySelector('.menu-icon');
+        const navigation = document.querySelector('.navigation');
+
+        menuIcon.addEventListener('click', () => {
+            navigation.classList.toggle('active');
+        });
+    });
+</script>
 
 </body>
 </html>
