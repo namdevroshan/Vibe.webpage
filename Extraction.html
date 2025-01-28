@@ -104,10 +104,12 @@
 .dropdown {
     position: relative;
     display: inline-block;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.dropdown .dropdown-toggle {
+.dropdown-toggle {
     text-decoration: none;
     color: #000;
     font-weight: 600;
@@ -116,12 +118,15 @@
     cursor: pointer;
     transition: color 0.3s ease;
 }
+.dropdown-container{
+    width: 620px;
+}
 
 .dropdown:hover .dropdown-toggle {
     color: #267CFC;
 }
 
-.dropdown .dropdown-menu {
+.dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -131,16 +136,37 @@
     border-radius: 8px;
     overflow: hidden;
     z-index: 10;
-    min-width: 220px;
-    padding: 10px 0;
-    
+    min-width: 400px; /* Adjust for image width */
+    padding: 10px;
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
 }
 
-.dropdown .dropdown-menu a {
+.dropdown-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between image and links */
+    padding: 10px;
+    flex-direction: row; /* Ensure image is on the left */
+}
+
+.dropdown-image {
+    float: left;
+    width: auto; /* Increased size of the image */
+    height: 350px;
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between links */
+}
+
+.dropdown-links a {
     display: flex;
     align-items: center;
     padding: 12px 20px;
@@ -151,21 +177,23 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.dropdown .dropdown-menu a i {
+.dropdown-links a i {
     font-size: 18px;
     margin-right: 12px;
     color: #267CFC;
     transition: color 0.3s ease;
 }
 
-.dropdown .dropdown-menu a:hover {
+.dropdown-links a:hover {
     background-color: #267CFC;
     color: #fff;
 }
 
-.dropdown .dropdown-menu a:hover i {
+.dropdown-links a:hover i {
     color: #fff;
 }
+
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
@@ -1048,14 +1076,19 @@
             <nav class="navigation">
                 <a href="#">Solutions</a>
                 <div class="dropdown">
-                    <a href="#" class="dropdown-toggle" style="font-size: 1.3rem">Platform</a>
+                    <a href="#" class="dropdown-toggle" style="font-size: 1.3rem","color: #02297D;">Platform</a>
                     <div class="dropdown-menu">
-                        <a href="index.html"><i class="fa fa-cloud"></i> Introduction</a>
-                        <a href="Extraction.html"><i class="fa fa-cloud"></i> Data Extraction</a>
-                        <a href="Transformation.html"><i class="fa fa-code"></i> Data Transformation</a>
-                        <a href="Modeling.html"><i class="fa fa-database"></i> Data Modeling and Quality</a>
-                        <a href="Workflow.html"><i class="fa fa-shield-alt"></i> Workflow Scheduling</a>
-                        <a href="Management.html"><i class="fa fa-cogs"></i> Master Data Management</a>
+                        <div class="dropdown-container">
+                            <img src="IMG@2x.png" alt="Isometric Design" class="dropdown-image">
+                            <div class="dropdown-links">
+                                <a href="index.html"><i class="fa fa-cloud"></i> Introduction</a>
+                                <a href="Extraction.html"><i class="fa fa-cloud"></i> Data Extraction</a>
+                                <a href="Transformation.html"><i class="fa fa-code"></i> Data Transformation</a>
+                                <a href="Modeling.html"><i class="fa fa-database"></i> Data Modeling and Quality</a>
+                                <a href="Workflow.html"><i class="fa fa-shield-alt"></i> Workflow Scheduling</a>
+                                <a href="Management.html"><i class="fa fa-cogs"></i> Master Data Management</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <a href="#">Resources</a>
