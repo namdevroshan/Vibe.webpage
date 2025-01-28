@@ -1387,6 +1387,27 @@ height:100vh;
         <p>© 2024 Healthcare Data Platform. All rights reserved.</p>
     </div>
 </footer>
+<script>
+    // JavaScript to handle loader and show content
+    window.addEventListener('load', () => {
+        const loadingPage = document.getElementById('loadingPage');
+        const body = document.body;
+
+        // Keep loader visible for a minimum of 2 seconds
+        setTimeout(() => {
+            // Fade out the loader
+            loadingPage.style.opacity = '0';
+            setTimeout(() => {
+                loadingPage.style.display = 'none'; // Completely hide loader
+                body.style.overflow = ''; // Restore scrollability
+                // Show the main content
+                document.querySelectorAll('header, nav, section, footer').forEach(el => {
+                    el.classList.add('content-visible');
+                });
+            }, 500); // Match this with the transition duration
+        }, 4000); // Minimum loader visibility duration
+    });
+</script>
 
 </body>
 </html>
