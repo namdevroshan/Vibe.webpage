@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthcare Data Platform</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        
-       
+
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -274,26 +264,26 @@ height:100vh;
 
 
 .hero {
-    
     position: relative; /* Establish reference for absolute positioning */
     display: flex;
     flex-wrap: wrap; /* Ensure wrapping on smaller screens */
-    
+    width: 100%;
+    min-height: 646px;
     align-items: center;
     justify-content: space-between;
-    
-    padding-top: 50px ;/* Adjust for header overlap */
+    padding: 40px;
+    padding-top: calc(40px + 70px); /* Adjust for header overlap */
     background-color: #f8f9fa;
     overflow: hidden; /* Ensure no overflow from animated background */
     box-sizing: border-box;
-     
+    margin-top: 70px;
 }
 
 
 .hero-content {
     flex: 1;
     max-width: 50%;
-    padding-left: 14%;
+    padding: 20px;
     text-align: center; /* Center-align text for smaller screens */
 }
 
@@ -622,7 +612,7 @@ height:100vh;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin: 50px auto;
-    max-width: 1400px;
+    max-width: 1200px;
     flex-wrap: wrap; /* Ensures wrapping for smaller screens */
     gap: 30px;
 }
@@ -746,56 +736,6 @@ height:100vh;
     }
 }
 
-.contact-form-section {
-        position: relative;
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
-    flex-wrap: wrap;
-}
-.contact-form h2 {
-    color: #267CFC;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    margin-top: 10px;
-    font-weight: 600;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #cbd5e1;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
-}
-.contact-form input:focus, .contact-form textarea:focus {
-    border-color: #3182ce;
-    outline: none;
-}
-
-.contact-form button {
-    margin-top: 15px;
-    padding: 10px;
-    background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.3s;
-}
-.contact-form button:hover {
-    background-color: #2b6cb0;
-}
 
         .mf-container {
             min-height: 512px; 
@@ -1167,250 +1107,3 @@ height:100vh;
         font-size: 0.7rem;
     }
 }
-    </style>
-   
-</head>
-<body>
-
-    <header>
-        <div class="header-container">
-            <div class="logo" style="margin-left: 10px;">
-                <img src="vibelogo2.png" alt="Healthcare Data Platform Logo" style="height: 60px;">
-            </div>
-            <nav class="navigation">
-                <a href="#">Solutions</a>
-                <div class="dropdown">
-                    <a href="#" class="dropdown-toggle" style="font-size: 1.3rem","color: #02297D;">Platform</a>
-                    <div class="dropdown-menu">
-                        <div class="dropdown-container">
-                            <img src="IMG@2x.png" alt="Isometric Design" class="dropdown-image">
-                            <div class="dropdown-links">
-                                <a href="index.html"><i class="fa fa-cloud"></i> Introduction</a>
-                                <a href="Extraction.html"><i class="fa fa-cloud"></i> Data Extraction</a>
-                                <a href="Transformation.html"><i class="fa fa-code"></i> Data Transformation</a>
-                                <a href="Modeling.html"><i class="fa fa-database"></i> Data Modeling and Quality</a>
-                                <a href="Workflow.html"><i class="fa fa-shield-alt"></i> Workflow Scheduling</a>
-                                <a href="Management.html"><i class="fa fa-cogs"></i> Master Data Management</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#">Resources</a>
-                <a href="https://www.saa.ai/contact.php" target="_parent">Contact</a>
-            </nav>
-            <div class="cta" style="margin-right: 20px;">
-                <button class="start">Watch Demo</button>
-            </div>
-            <div class="menu-icon">
-                <!-- Hamburger Menu Icon -->
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
-    
-    
-    <section class="hero">
-        <div class="background">
-            <!-- Adding multiple animated layers -->
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-          </div>
-        <div class="hero-content">
-            <h1>Contact Us </h1>
-            <p>We're here to assist you with any inquiries or support you may need.</p>
-        </div>
-        <div class="hero-image">
-            <img src="contact-us-landing-page-with-devices-birds_23-2148260585-removebg-preview.png" alt="Hero Section" />
-        </div>
-    </section>
-
-<section class="features-section">
-    <h2>Get in Touch</h2>
-    <!-- <p>Comprehensive data extraction capabilities designed for modern healthcare systems</p> -->
-    <div class="features-container">
-        <div class="feature-card">
-            <div class="background">
-                <!-- Adding multiple animated layers -->
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-              </div>
-            <div class="feature-icon">
-                <img class="feature-icon-img1" src="Worldwide Location.png" alt="Hero Section" style="width: 60%;" />
-            </div>
-            <div class="feature-title">Head Office:</div>
-            <div class="feature-description">
-                <ul>
-                    <li>Address: 15 College Road, Harrow, England, HA1 1BA</li>
-                    <li>Phone: +44 7443 205847</li>
-                    <li>Email: info@saa.ai</li>
-                </ul>
-            </div>
-        </div>
-        <div class="feature-card">
-            <div class="background">
-                <!-- Adding multiple animated layers -->
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-              </div>
-            <div class="feature-icon">
-                <img class="feature-icon-img1" src="Worldwide Location.png" alt="Hero Section" style="width: 60%;" />
-            </div>
-            <div class="feature-title">United Kingdom Office:</div>
-            <div class="feature-description">
-                <ul>
-                    <li>Address: 43 Scholars Court, Northampton, NN1 1ES</li>
-                    <li>Phone: +44 7412 689349</li>
-                    <li>Email: info@saa.ai</li>
-                </ul>
-            </div>
-        </div>
-        <div class="feature-card">
-            <div class="background">
-                <!-- Adding multiple animated layers -->
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-              </div>
-            <div class="feature-icon">
-                <img class="feature-icon-img1" src="Worldwide Location.png" alt="Hero Section" style="width: 60%;" />
-            </div>
-            <div class="feature-title">Australia Office:</div>
-            <div class="feature-description">
-                <ul>
-                    <li>Address: 52 Bubuk Street, Bungarribee, New South Wales, 2767</li>
-                    <li>Phone: +64 27 2852310</li>
-                    <li>Email: info@saa.ai</li>
-                </ul>
-            </div>
-        </div>
-        <div class="feature-card">
-            <div class="background">
-                <!-- Adding multiple animated layers -->
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-              </div>
-            <div class="feature-icon">
-                <img class="feature-icon-img1" src="Worldwide Location.png" alt="Hero Section" style="width: 60%;" />
-            </div>
-            <div class="feature-title">New Zealand Office:</div>
-            <div class="feature-description">
-                <ul>
-                    <li>Address: 5 Darley Way, Papakura, Auckland, 2110</li>
-                    <li>Phone: +64 27 2852310</li>
-                    <li>Email: info@saa.ai</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="data-integration-section">
-    <div class="background">
-        <!-- Adding multiple animated layers -->
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-      </div>
-   
-      <div class="contact-form" >
-        <h2>Send Us a Message</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="email">Phone No.:</label>
-            <input type="number" id="Phone No." name="Phone No." required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    
-    <div class="image">
-        <img src="online-marketing-incoming-message-paper-aircraft-mobile-phone_39422-684-removebg-preview.png" alt="Data Integration Illustration">
-    </div>
-</section>
-
-
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-logo">
-            <img src="vibelogo2.png" alt="Healthcare Data Platform Logo" style="height: 50px;">
-            <p>
-                Simplifying healthcare data extraction with advanced automation and security features.
-            </p>
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook">FB</a>
-                <a href="#" aria-label="Twitter">TW</a>
-                <a href="#" aria-label="LinkedIn">IN</a>
-            </div>
-        </div>
-        <div class="footer-links">
-            <div>
-                <h4>Solutions</h4>
-                <ul>
-                    <li><a href="#">Analytics</a></li>
-                    <li><a href="#">Data Integration</a></li>
-                    <li><a href="#">Security</a></li>
-                    <li><a href="#">Compliance</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Support</h4>
-                <ul>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">API Reference</a></li>
-                    <li><a href="#">Guides</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© 2024 Healthcare Data Platform. All rights reserved.</p>
-    </div>
-</footer>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const menuIcon = document.querySelector('.menu-icon');
-        const navigation = document.querySelector('.navigation');
-
-        menuIcon.addEventListener('click', () => {
-            navigation.classList.toggle('active');
-        });
-    });
-</script>
-<script>
-    function toggleMobileMenu() {
-        const nav = document.querySelector('.navigation');
-        nav.classList.toggle('mobile-active');
-    }
-</script>
-
-
-</body>
-</html>
