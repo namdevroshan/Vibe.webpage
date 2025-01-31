@@ -125,6 +125,7 @@ height:100vh;
 
 /* Dropdown Adjustments */
 .dropdown {
+    
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -151,6 +152,8 @@ height:100vh;
 }
 
 .dropdown-menu {
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden;
     display: none;
     position: absolute;
     top: 100%;
@@ -1117,3 +1120,159 @@ height:100vh;
         font-size: 0.7rem;
     }
 }
+/* Dropdown Adjustments */
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Dropdown Toggle */
+.dropdown-toggle {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Dropdown Container width */
+.dropdown-container {
+    width: 100%;
+    max-width: 620px;
+}
+
+/* Hover Effect for Toggle */
+.dropdown:hover .dropdown-toggle {
+    color: #267CFC;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10;
+    min-width: 300px;
+    padding: 10px;
+    width: auto;  /* Allow dynamic width based on content */
+    max-width: 90vw;  /* Ensure it doesn't exceed screen width */
+}
+
+/* Dropdown Content Flex */
+.dropdown-menu > .dropdown-content {
+    width: auto;  /* Let content decide width */
+    margin-right: 20px;  /* Space between columns */
+}
+
+/* Remove Margin for Last Child */
+.dropdown-menu > .dropdown-content:last-child {
+    margin-right: 0;
+}
+
+/* Dropdown Content Styling */
+.dropdown-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+/* Dropdown Links */
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dropdown-links a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-links a i {
+    font-size: 18px;
+    margin-right: 12px;
+    color: #267CFC;
+    transition: color 0.3s ease;
+}
+
+.dropdown-links a:hover {
+    background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
+    color: #fff;
+}
+
+.dropdown-links a:hover i {
+    color: #fff;
+}
+
+/* Responsive Design for Larger Screens */
+@media (max-width: 1024px) {
+    .dropdown-menu {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .dropdown-content {
+        width: 100%;
+    }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Dropdown Menu Visibility */
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Initial Hidden State of Dropdown */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 10;
+    padding: 10px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Keep Other Styles Same */
+
+
+
