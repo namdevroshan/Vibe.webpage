@@ -311,25 +311,41 @@
 </footer>
 <script>
     // JavaScript to handle loader and show content
-    window.addEventListener('load', () => {
-        const loadingPage = document.getElementById('loadingPage');
-        const body = document.body;
+    document.addEventListener("DOMContentLoaded", function () {
+    const loadingPage = document.getElementById("loadingPage");
+    const body = document.body;
+    const isFirstVisit = sessionStorage.getItem("firstVisit");
 
-        // Keep loader visible for a minimum of 2 seconds
+    if (!isFirstVisit) {
+        // First-time visitor: Show loader
+        sessionStorage.setItem("firstVisit", "true");
+        body.style.overflow = "hidden"; // Prevent scrolling while loading is active
+
         setTimeout(() => {
-            // Fade out the loader
-            loadingPage.style.opacity = '0';
+            loadingPage.style.opacity = "0";
             setTimeout(() => {
-                loadingPage.style.display = 'none'; // Completely hide loader
-                body.style.overflow = ''; // Restore scrollability
-                // Show the main content
-                document.querySelectorAll('header, nav, section, footer').forEach(el => {
-                    el.classList.add('content-visible');
-                });
-            }, 500); // Match this with the transition duration
-        }, 4000); // Minimum loader visibility duration
+                loadingPage.style.display = "none";
+                body.style.overflow = ""; // Restore scrolling
+            }, 400);
+        }, 3000);
+    } else {
+        // Returning visitor: Hide loader immediately
+        loadingPage.style.display = "none";
+        body.style.overflow = "";
+    }
+
+    // Prevent loader from showing when clicking a dropdown link
+    document.querySelectorAll(".dropdown-links a").forEach(link => {
+        link.addEventListener("click", function (event) {
+            loadingPage.style.display = "none"; // Ensure loader stays hidden
+        });
     });
+});
+
 </script>
+
+
+
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const menuIcon = document.querySelector('.menu-icon');
