@@ -1314,6 +1314,10 @@ text-align: center;
         transition: background-color 0.3s ease-in-out;
         
 }
+.contact-btn{
+    position: relative;
+    z-index: 200;
+}
 
 
 
