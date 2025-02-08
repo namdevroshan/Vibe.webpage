@@ -1458,7 +1458,24 @@ color: #ffffff ;
     position: relative;
     z-index: 200;
 }
+.dropdown-section a i {
+    margin-right: 8px; /* Add space between icon and text */
+}
+.feature-description ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
 
+.feature-description li {
+    display: flex; /* Use flexbox to align the icon and text */
+    align-items: center; /* Vertically center the content */
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+.feature-description li img, .feature-description li i {
+    margin-right: 10px; /* Add space between the icon and text */
+    width: 20px; /* Adjust the icon size */
+}
 
 
 
