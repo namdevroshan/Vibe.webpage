@@ -1060,164 +1060,274 @@ text-align: center;
     color: #cbd5e1;
     padding: 40px 20px;
     font-size: 0.9rem;
-}
-
-.footer-container {
+    }
+    
+    .footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.footer-logo {
+    position: relative;
+    }
+    
+    .footer-logo {
     flex: 1;
     min-width: 250px;
-}
-
-.footer-logo .logo {
+    }
+    
+    .footer-logo .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #6366f1;
     margin-bottom: 10px;
-}
-
-.footer-logo p {
+    }
+    
+    .footer-logo p {
     margin-bottom: 20px;
     line-height: 1.6;
-}
-
-.social-icons {
+    }
+    
+    .stay-connected {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    }
+    
+    .social-icons {
     display: flex;
     gap: 10px;
-}
-
-.social-icons a {
+    }
+    
+    .social-icons a {
     text-decoration: none;
     color: #cbd5e1;
+    font-size: 1.5rem;
+    }
+    
+    .contact-button {
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #1e293b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     font-weight: bold;
-    font-size: 1rem;
-}
-
-.footer-links {
+    }
+    
+    .contact-button:hover {
+    background-color: #cbd5e1;
+    }
+    
+    .footer-links {
     display: flex;
     flex: 2;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-}
-
-.footer-links div {
+    }
+    
+    .footer-links div {
     flex: 1;
     min-width: 150px;
-}
-
-.footer-links h4 {
+    }
+    
+    .footer-links h4 {
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-.footer-links ul {
+    }
+    
+    .footer-links ul {
     list-style: none;
     padding: 0;
-}
-
-.footer-links li {
+    }
+    
+    .footer-links li {
     margin-bottom: 10px;
-}
-
-.footer-links a {
+    }
+    
+    .footer-links a {
     text-decoration: none;
     color: #cbd5e1;
-}
-
-.footer-links a:hover {
+    }
+    
+    .footer-links a:hover {
     color: #fff;
-}
-
-.footer-bottom {
+    }
+    
+    .footer-bottom {
     text-align: center;
     margin-top: 20px;
     border-top: 1px solid #334155;
     padding-top: 20px;
-}
-
-.footer-bottom p {
+    }
+    
+    .footer-bottom p {
     margin: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .footer-container {
-        gap: 20px;
-        flex-direction: column;
-        align-items: center;
     }
-
-    .footer-logo {
-        text-align: center;
-    }
-
-    .social-icons {
-        justify-content: center;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-links div {
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
     .footer {
-        padding: 30px 15px;
-        font-size: 0.8rem;
-    }
-
-    .footer-logo .logo {
-        font-size: 1.2rem;
-    }
-
-    .footer-links {
-        gap: 15px;
-    }
-
-    .footer-links div {
-        min-width: 100%;
-    }
-
-    .footer-bottom {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .footer {
-        padding: 20px 10px;
-    }
-
-    .footer-logo .logo {
-        font-size: 1rem;
-    }
-
-    .footer-links h4 {
+        background-color: #1e293b;
+        color: #cbd5e1;
+        padding: 40px 20px;
         font-size: 0.9rem;
     }
-
-    .footer-links a {
-        font-size: 0.8rem;
+    
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: flex-start;
     }
-
+    
+    .footer-logo {
+        flex: 1;
+        min-width: 250px;
+    }
+    
+    .footer-logo img {
+        height: 60px;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex: 3;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .footer-links div {
+        flex: 1;
+        min-width: 150px;
+    }
+    
+    .stay-connected {
+        display: flex;
+        text-align: right;
+        flex: 1;
+        min-width: 200px;
+    }
+    
+    .social-icons {
+        display:contents;
+        gap: 10px;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        
+    }
+    
+    .social-icons a img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .contact-button {
+        background-color: #e9ecef;
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    
+    .contact-button:hover {
+        color: white;
+        background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
+    }
+    
     .footer-bottom {
-        font-size: 0.7rem;
+        text-align: center;
+        margin-top: 20px;
+        border-top: 1px solid #334155;
+        padding-top: 20px;
     }
-}
+    
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+    .footer-container {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .footer-logo {
+    text-align: center;
+    }
+    
+    .stay-connected {
+    position: relative;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+    
+    .social-icons {
+    justify-content: center;
+    }
+    
+    .footer-links {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .footer-links div {
+    text-align: center;
+    }
+    }
+    
+    @media (max-width: 768px) {
+    .footer {
+    padding: 30px 15px;
+    font-size: 0.8rem;
+    }
+    
+    .footer-logo .logo {
+    font-size: 1.2rem;
+    }
+    
+    .footer-links {
+    gap: 15px;
+    }
+    
+    .footer-links div {
+    min-width: 100%;
+    }
+    
+    .footer-bottom {
+    font-size: 0.8rem;
+    }
+    }
+    
+    @media (max-width: 480px) {
+    .footer {
+    padding: 20px 10px;
+    }
+    
+    .footer-logo .logo {
+    font-size: 1rem;
+    }
+    
+    .footer-links h4 {
+    font-size: 0.9rem;
+    }
+    
+    .footer-links a {
+    font-size: 0.8rem;
+    }
+    
+    .footer-bottom {
+    font-size: 0.7rem;
+    }
+    }
     </style>
    
 </head>
@@ -1570,55 +1680,61 @@ text-align: center;
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-logo">
-            <img src="vibelogo2.png" alt="Healthcare Data Platform Logo" style="height: 50px;">
-            <p>
-                Simplifying healthcare data extraction with advanced automation and security features.
-            </p>
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook">FB</a>
-                <a href="#" aria-label="Twitter">TW</a>
-                <a href="#" aria-label="LinkedIn">IN</a>
-            </div>
+            <img src="vibelogo2.png" alt="VIBE Logo" style="height: 80px;">
         </div>
         <div class="footer-links">
             <div>
-                <h4>Solutions</h4>
+                <h4>WHY SAA</h4>
                 <ul>
-                    <li><a href="#">Analytics</a></li>
-                    <li><a href="#">Data Integration</a></li>
-                    <li><a href="#">Security</a></li>
-                    <li><a href="#">Compliance</a></li>
+                    <li><a href="https://www.saa.ai/company.php">Company</a></li>
+                    <li><a href="https://www.saa.ai/index.php#success-stories">Success Stories</a></li>
+                    <li><a href="https://www.saa.ai/resource_pool.php">Resources</a></li>
+                    <li><a href="https://www.saa.ai/careers.php">Careers</a></li>
                 </ul>
             </div>
             <div>
-                <h4>Support</h4>
+                <h4>INDUSTRIES</h4>
                 <ul>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">API Reference</a></li>
-                    <li><a href="#">Guides</a></li>
+                    <li><a href="https://www.saa.ai/Finance.php">Banking & Finance</a></li>
+                    <li><a href="https://www.saa.ai/HealthCare.php">Healthcare</a></li>
+                    <li><a href="https://www.saa.ai/Retail.php">Retail</a></li>
+                    <li><a href="https://www.saa.ai/Social.php">Social & Crime</a></li>
                 </ul>
             </div>
             <div>
-                <h4>Company</h4>
+                <h4>SOLUTIONS</h4>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Careers</a></li>
+                    <li><a href="https://www.saa.ai/data-streaming.php">Data Streaming</a></li>
+                    <li><a href="https://www.saa.ai/data-lineage.php">Data Lineage</a></li>
+                    <li><a href="https://www.saa.ai/data-warehouse-automation.php">Data Warehousing</a></li>
+                    <li><a href="https://www.saa.ai/data-migration.php">Data Migration</a></li>
                 </ul>
             </div>
             <div>
-                <h4>Legal</h4>
+                <h4>INSIGHTS</h4>
                 <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
+                    <li><a href="https://www.saa.ai/ai-and-machine-learning.php">AI & ML</a></li>
+                    <li><a href="https://www.saa.ai/visualizations-and-dashboards.php">Visualization</a></li>
+                    <li><a href="https://www.saa.ai/embedded-analytics.php">Embedded Analytics</a></li>
+                    <li><a href="https://www.saa.ai/data-monitoring-and-action.php">Data Monitoring</a></li>
                 </ul>
+            </div>
+            <div>
+                <h4>STAY CONNECTED</h4>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/saa-consultancy/?originalSubdomain=in" aria-label="LinkedIn"><img src="Platform=LinkedIn, Color=Negative.png" alt="LinkedIn" style="padding: 7px;"></a>
+                    <a href="https://www.facebook.com/people/Saa-Consultancy/100063931778063/" aria-label="Facebook"><img src="Platform=Facebook, Color=Negative.png" alt="Facebook"style="padding: 7px;"></a>
+                    <a href="https://www.instagram.com/saa_consultancy/" aria-label="Instagram"><img src="Platform=Instagram, Color=Negative.png" alt="Instagram" style="padding: 7px;"></a>
+                </div>
+                <button class="contact-button">Contact Us</button>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>© 2024 Healthcare Data Platform. All rights reserved.</p>
+        <p>© 2025 SAA Consultancy. All rights reserved.</p>
     </div>
 </footer>
+
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const menuIcon = document.querySelector('.menu-icon');
