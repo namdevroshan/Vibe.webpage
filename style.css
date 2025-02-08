@@ -963,7 +963,7 @@ border-radius: 8px;
 .footer {
     background-color: #1e293b;
     color: #cbd5e1;
-    padding: 100px 20px; /* Increased padding for more height */
+    padding: 50px 40px; /* Increased padding for more height */
     font-size: 0.9rem;
     width: 100%;
     position: relative;
@@ -984,6 +984,7 @@ border-radius: 8px;
 .footer-logo {
     flex: 1;
     min-width: 250px;
+    margin-top: 20px;
 }
 
 .footer-logo img {
@@ -1008,10 +1009,12 @@ border-radius: 8px;
 
 .footer-links div {
     flex: 1;
+    margin-left: -120px;
     min-width: 200px;
 }
 
 .footer-links h4 {
+    color:   #65B3E1;
     font-size: 1.2rem; /* Increased font size of headings */
     margin-bottom: 15px; /* Added margin for spacing between heading and list */
 }
@@ -1046,7 +1049,7 @@ border-radius: 8px;
     gap: 10px;
     justify-content: flex-end;
     margin-bottom: 10px;
-    display: block;
+    display:contents;
 }
 
 .social-icons a img {
@@ -1055,6 +1058,8 @@ border-radius: 8px;
 }
 
 .contact-button {
+    margin-top: 10px;
+    display: block;
     background-color: #e9ecef;
     color: rgb(0, 0, 0);
     border: none;
@@ -1078,6 +1083,8 @@ border-radius: 8px;
 
 .footer-bottom p {
     margin: 0;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 
