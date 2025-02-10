@@ -1410,3 +1410,55 @@ color: #ffffff ;
     width: 20px; /* Adjust the icon size */
 }
 
+
+
+/* Custom Hero Section */
+/* Basic reset */
+
+/* Custom Hero Section */
+.content-wrapper {
+    width: 100%;
+    /* max-width: 800px;
+    min-height: 300px; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+}
+.nexthero {
+    font-size: 2.5rem;
+    color: #267CFC;
+    font-weight: bold;
+    color: #111827;
+    text-align: center;
+}
+.nextpara {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+    padding: 0 16%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+@media (max-width: 768px) {
+    .nexthero {
+        font-size: 1.75rem;
+    }
+    .nextpara {
+        font-size: 0.95rem;
+        padding: 0 5%;
+    }
+}
+@media (max-width: 480px) {
+    .nexthero {
+        font-size: 1.5rem;
+    }
+    .nextpara {
+        font-size: 0.9rem;
+        padding: 0 3%;
+    }
+}
