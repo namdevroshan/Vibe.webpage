@@ -896,7 +896,8 @@ font-size: 0.8rem;
 
 .cta-section {
 position: relative;
-height: 454px;
+/* width: 100%; */
+height: 300px;
 text-align: center;
 padding: 60px 20px;
 background-color: #fff;

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="icon" href="Group 32@2x.png" type="image/x-icon">
+
+    <!-- Optional: Add different sizes for compatibility with various devices -->
+    <link rel="icon" href="Group 32@2x.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="Group 32@2x.png" sizes="16x16" type="image/svg+xml">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+
+</head>
+
+
+<body class="bg-light">
+    <nav>
+        <!-- Logo Section -->
+        <div>
+          <a href="index.html">
+          <img src="logo.jpeg" alt="Healthcare Data Platform Logo" style="height: 70px;"></a>
+        </div>
+    
+        <!-- Menu Links -->
+        <div class="menu">
+          <!-- <a class="nav-item" href="#">SOLUTIONS</a> -->
+          <div class="dropdown">
+            <a  href="#" class="dropdown-toggle" style="color: #02297D;">VIBE</a>
+            <div class="dropdown-content">
+                
+              <img src="IMG@2x.png" alt="Dropdown Image" class="dropdown-image">
+              <div class="dropdown-grid">
+                <div style="width: 100vw;">
+                  <div style="display: flex; width: 60%;;">
+                <div class="dropdown-section">
+                  <h3>Introduction</h3>
+                  <a href="index.html"><i class="fa fa-cloud" style="color:#267CFC;"></i> Introduction</a>
+                  </div>
+                  <div class="dropdown-section">
+                  <h3>Data Extract</h3>
+                  <a href="Extraction.html"><i class="fa fa-cloud" style="color:#267CFC;"></i> Data Extraction</a>
+                </div>
+                <div class="dropdown-section">
+                  <h3>Data Transforma</h3>
+                  <a href="Transformation.html"><i class="fa fa-code" style="color:#267CFC;"></i> Data Transformation</a>
+                </div>
+                </div>
+                
+                <div style="display: flex; width: 60%;;">
+                <div class="dropdown-section">
+                  <h3>Data Modeling</h3>
+                  <a href="Modeling.html"><i class="fa fa-database" style="color:#267CFC;"></i> Data Modeling and Quality</a>
+                </div>
+                <div class="dropdown-section">
+                  <h3>Data Workflow</h3>
+                  <a href="Workflow.html"><i class="fa fa-shield-alt" style="color:#267CFC;"></i> Workflow Scheduling</a>
+                </div>
+                <div class="dropdown-section">
+                  <h3>Master Data Management</h3>
+                  <a href="Management.html"><i class="fa fa-cogs" style="color:#267CFC;"></i> Master Data Management</a>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+            </div>
+          <div class="dropdown">
+            <a  href="#" class="dropdown-toggle" style="color: #02297D;">PRODUCTS</a>
+            <div class="dropdown-content" style="width: 100%;">
+              <img src="product drop.png" alt="Dropdown Image" class="dropdown-image">
+              <div class="dropdown-grid">
+                <div style="width: 100vw;">
+                <div style="display: flex; width: 60%;;">
+                <div class="dropdown-section">
+                  <h3>Banking & Finance</h3>
+                  <a href="https://www.saa.ai/P&L.php"><i class="fa fa-cloud" style="color:#267CFC;"></i> Financial Analysis</a>
+                </div>
+                <div class="dropdown-section">
+                  <h3>Road Infrastructure (Highways)</h3>
+                  <a href="https://www.saa.ai/NPD.php"><i class="fa fa-car" style="color:#267CFC;"></i> Vehicle Number Plate Detection</a>
+                  <a href="https://www.saa.ai/HLMV.php"><i class="fa fa-truck" style="color:#267CFC;"></i> HMV & LMV Detection</a>
+                </div>
+                
+                <div class="dropdown-section">
+                  <h3>Information Technology</h3>
+                  <a href="https://www.saa.ai/real-time-data-connector.php"><i class="fa fa-network-wired" style="color:#267CFC;"></i> Real Time Data Connector</a>
+                  <a href="https://www.saa.ai/data-flow-rule-engine.php"><i class="fa fa-database" style="color:#267CFC;"></i> Data Flow Rule Engine</a>
+                </div>
+              </div>
+                <div style="display: flex; width: 60%;">
+                <div class="dropdown-section">
+                  <h3>Healthcare</h3>
+                  <a href="https://www.saa.ai/nhs-data-warehouse.php"><i class="fa fa-heartbeat" style="color:#267CFC;"></i> NHS Data Warehouse</a>
+                  <a href="https://www.saa.ai/medical-data-achieving-solution.php"><i class="fa fa-medkit" style="color:#267CFC;"></i> Medical Data Archiving Solution</a>
+                  <a href="https://www.saa.ai/commissioning-data-extraction-and-reporting.php"><i class="fa fa-hospital" style="color:#267CFC;"></i> Commissioning Data Extraction</a>
+                  <a href="https://www.saa.ai/population-health-management-and-analytics.php"><i class="fa fa-users" style="color:#267CFC;"></i> Population Health Management</a>
+                  <a href="https://www.saa.ai/BEDM.php"><i class="fa fa-bed" style="color:#267CFC;"></i> Patient Bed Management</a>
+                </div>
+                <div class="dropdown-section">
+                  <h3>Retail</h3>
+                  <a href="https://www.saa.ai/logo.php"><i class="fa fa-barcode" style="color:#267CFC;"></i> Logo Identification</a>
+                  <a href="https://www.saa.ai/FFD.php"><i class="fa fa-users" style="color:#267CFC;"></i> Foot Fall Detection</a>
+                  <a href="https://www.saa.ai/hyper-local-delivery-applications.php"><i class="fa fa-shopping-cart" style="color:#267CFC;"></i> Hyper Local Delivery Apps</a>
+                  <a href="https://www.saa.ai/product-scrapping-and-price-analysis.php"><i class="fa fa-tags" style="color:#267CFC;"></i> Product Scrapping & Price Analysis</a>
+                </div>
+                <div class="dropdown-section">
+                  <h3>Social & Crime</h3>
+                  <a href="https://www.saa.ai/care.php"><i class="fa fa-shield-alt" style="color:#267CFC;"></i> CARE Application</a>
+                  <a href="https://www.saa.ai/CFR.php"><i class="fa fa-user-secret" style="color:#267CFC;"></i> Face Recognition</a>
+                  <a href="https://www.saa.ai/FED.php"><i class="fa fa-smile" style="color:#267CFC;"></i> Facial Expression Detection</a>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle" style="color: #02297D;">SOLUTIONS</a>
+            <div class="dropdown-content" style="width: 100%;">
+                <img src="product drop.png" alt="Dropdown Image" class="dropdown-image">
+                <div class="dropdown-grid">
+                    <div style="width: 100vw;">
+                        <div style="display: flex; width: 60%;">
+                            
+                            <div class="dropdown-section">
+                              <h3>Mobile Application</h3>
+                              <a href="https://www.saa.ai/mobile-application.php#android"><i class="fa fa-android" style="color:#267CFC;"></i> Android</a>
+                              <a href="https://www.saa.ai/mobile-application.php#ios"><i class="fa fa-apple" style="color:#267CFC;"></i> iOS</a>
+                              <a href="https://www.saa.ai/mobile-application.php#hybrid"><i class="fa fa-mobile-alt" style="color:#267CFC;"></i> Hybrid</a>
+                          </div>
+                          <div class="dropdown-section">
+                              <h3>Web Application Development</h3>
+                              <a href="https://www.saa.ai/web-application-development.php#ecommerce"><i class="fa fa-shopping-cart" style="color:#267CFC;"></i> E-commerce Application</a>
+                              <a href="https://www.saa.ai/web-application-development.php#wordpress"><i class="fa fa-wordpress" style="color:#267CFC;"></i> Web Flow & WordPress</a>
+                          </div>
+                            <div class="dropdown-section">
+                                <h3>Digital Marketing</h3>
+                                <a href="https://www.saa.ai/search-engine-optimization.php"><i class="fa fa-search" style="color:#267CFC;"></i> Search Engine Optimization (SEO)</a>
+                                <a href="https://www.saa.ai/social-handle-boosting.php"><i class="fa fa-users" style="color:#267CFC;"></i> Social Handle Boosting</a>
+                                <a href="https://www.saa.ai/promotions-and-broadcasting.php"><i class="fa fa-bullhorn" style="color:#267CFC;"></i> Promotions & Broadcasting</a>
+                            </div>
+                            
+                        </div>
+                        <div style="display: flex; width: 40%;">
+                        <div class="dropdown-section">
+                          <h3>Data Integration</h3>
+                          <a href="https://www.saa.ai/application-automation.php"><i class="fa fa-cogs" style="color:#267CFC;"></i> Application Automation</a>
+                          <a href="https://www.saa.ai/data-lake-creation.php"><i class="fa fa-database" style="color:#267CFC;"></i> Data Lake Creation</a>
+                          <a href="https://www.saa.ai/data-lineage.php"><i class="fa fa-stream" style="color:#267CFC;"></i> Data Lineage</a>
+                          <a href="https://www.saa.ai/data-simulation.php"><i class="fa fa-microscope" style="color:#267CFC;"></i> Data Simulation</a>
+                          <a href="https://www.saa.ai/data-streaming.php"><i class="fa fa-sync" style="color:#267CFC;"></i> Data Streaming (CDC)</a>
+                          <a href="https://www.saa.ai/data-warehouse-automation.php"><i class="fa fa-server" style="color:#267CFC;"></i> Data Warehouse Automation</a>
+                          <a href="https://www.saa.ai/extract-load-transformation.php"><i class="fa fa-exchange-alt" style="color:#267CFC;"></i> Extract Load & Transformation (ELT)</a>
+                          <a href="https://www.saa.ai/key-performance-indicator-automation.php"><i class="fa fa-chart-line" style="color:#267CFC;"></i> KPI Automation</a>
+                          <a href="https://www.saa.ai/data-migration.php"><i class="fa fa-exchange" style="color:#267CFC;"></i> Data Migration</a>
+                      </div>
+                      <div class="dropdown-section">
+                        <h3>Analytics</h3>
+                        <a href="https://www.saa.ai/visualizations-and-dashboards.php"><i class="fa fa-chart-bar" style="color:#267CFC;"></i> Visualizations & Dashboards</a>
+                        <a href="https://www.saa.ai/ai-and-machine-learning.php"><i class="fa fa-robot" style="color:#267CFC;"></i> AI & Machine Learning</a>
+                        <a href="https://www.saa.ai/ai-and-machine-learning.php"><i class="fa fa-eye" style="color:#267CFC;"></i> Data Monitoring & Action</a>
+                        <a href="https://www.saa.ai/embedded-analytics.php"><i class="fa fa-code" style="color:#267CFC;"></i> Embedded Analytics</a>
+                        <a href="https://www.saa.ai/data-scrapping.php"><i class="fa fa-database" style="color:#267CFC;"></i> Data Scraping</a>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle" style="color: #02297D;">INDUSTRIES</a>
+          <div class="dropdown-content">
+              <img src="IMG@2x.png" alt="Dropdown Image" class="dropdown-image">
+              <div class="dropdown-grid">
+                  <div style="width: 100vw;">
+                      <div style="display: flex; width: 60%;">
+                          <div class="dropdown-section">
+                              <a href="https://www.saa.ai/finance.php"><i class="fas fa-piggy-bank" style="color:#267CFC;"></i>Banking & Finance</a>
+                          </div>
+                          <div class="dropdown-section">
+                              <a href="https://www.saa.ai/highways.php"><i class="fas fa-road" style="color:#267CFC;"></i>Road Infrastructure(Highways)</a>
+                          </div>
+                          <div class="dropdown-section">
+                              <a href="https://www.saa.ai/healthcare.php"><i class="fas fa-heartbeat" style="color:#267CFC;"></i>Healthcare</a>
+                          </div>
+                      </div>
+                      <div style="display: flex; width: 60%;">
+                          <div class="dropdown-section">
+                              <a href="https://www.saa.ai/retail.php"><i class="fas fa-store" style="color:#267CFC;"></i>Retail</a>
+                          </div>
+                          <div class="dropdown-section">
+                              <a href="https://www.saa.ai/social.php"><i class="fas fa-users" style="color:#267CFC;"></i>Social & Crime</a>
+                          </div>
+                          <div class="dropdown-section">
+                              <a href="https://www.saa.ai/information-technology.php"><i class="fas fa-laptop-code" style="color:#267CFC;"></i>Information Technology</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+          <a class="nav-item" href="https://www.saa.ai/resource_pool.php">RESOURCING</a>
+          <!-- <a class="nav-item" href="#">CAREER</a> -->
+          <a class="nav-item" href="https://www.saa.ai/company.php">ABOUT SAA</a>
+          <a class="nav-item" href="contact.html" >CONTACT US</a>
+        </div>
+    
+        <!-- Call-to-Action Button -->
+        <div>
+          <button class="cta-button">Get Started</button>
+        </div>
+      </nav>
+   
+    <div class="mb-4" style="font-family: Oracle Sans!important;">
+        <!-- Header with Logo -->
+        
+        <div class="row" style="display: flex; flex-wrap: wrap;">
+            <div class="col-md-7 " style="padding: 20px;">
+                <div class="background">
+                    <!-- Adding multiple animated layers -->
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                  </div>
+                <div>
+                    <div class="d-flex align-items-center mb-3" style="margin-top: 30px; margin-left: 100px;">
+                        <img src="vibelogo2.png" alt="VIBE Logo" width="70" class="me-2">
+                        <p class="mb-0 fw-bold" style="font-size: 20px; color: #6a0dad;">Healthcare Data Platform</p>
+                    </div>
+                    <h4 style="margin-left: 100px; color: #333;">Start your 30-day trial</h4>
+                    
+                
+                <ul >
+                    <li><strong>Quick Start with Guided Setup</strong><br> Easily explore VIBE’s powerful data integration capabilities with our intuitive, step-by-step guide. Get hands-on with sample datasets to experience seamless data migration, transformation, and real-time analytics tailored for healthcare.</li>
+                    <li><strong>Connect with VIBE Experts</strong><br> New to VIBE? Book a free live demo with our healthcare data specialists. Gain exclusive insights, tips, and best practices to maximize the value of your trial. Whether you're starting or scaling, our experts are here to support you.</li>
+                    <li><strong>Full Access to all the Features</strong><br> Discover the full potential of VIBE beyond basic data management. Enjoy advanced features like automated data quality checks, AI-driven analytics, master data management (MDM), and real-time KPI dashboards—all designed to optimize healthcare data workflows.</li>
+                    <li><strong>Try it for Free</strong> <br>Get immediate access to VIBE’s comprehensive data platform. No waiting, no hassle—just full functionality for 15 days at zero cost.<br>Experience the future of healthcare data management with VIBE today!</li>
+                </ul>
+                
+            </div>
+        </div>
+
+            <div class="col-md-5 "style="background-color: #fcfcfd;" >
+                <div class="text-center mb-4" style="margin-top: 30px;">            
+                    <h3 class="mt-2">Register for your trial</h3>
+                    <p class="mt-2">Already have a SAA account? <a href="https://www.saa.ai/login.php" class="text-primary fw-bold">Log in</a>
+                    </p>
+                </div>
+                <div class="p-4 text-secondary">
+                    <!-- Collapsible Account Information -->
+                   
+
+                    <div>
+                        <form action="your-backend-endpoint" method="POST">
+                            <div class="row">
+                            <div class="col-md-6 mb-3 text-secondary">
+                                <label for="email" class="form-label">Business Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3 ">
+                                    <label for="country" class="form-label">Country/Region <span class="text-danger">*</span></label>
+                                    <select class="form-select text-secondary" id="country" required onchange="updateCountryCode()">
+                                        <option value="+91" selected>India</option>
+                                        <option value="+1">United States</option>
+                                        <option value="+44">United Kingdom</option>
+                                        <option value="+61">Australia</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="state" class="form-label">State/Province <span class="text-danger">*</span></label>
+                                    <select class="form-select text-secondary" id="state" required>
+                                        <option selected>Madhya Pradesh</option>
+                                        <option>Delhi</option>
+                                        <option>Maharashtra</option>
+                                        <option>Karnataka</option>
+                                        <option>Gujarat</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="countryCode">+91</span>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                            </div>
+                            
+                            <!-- Company -->
+                            <div class="col-md-6 mb-3">
+                                <label for="company" class="form-label">Company</label>
+                                <input type="text" class="form-control" id="company">
+                            </div>
+                        </div>
+                        </div>
+                        
+                            <div class="mb-3">
+                                <label for="role" class="form-label">Which best describes you? <span class="text-danger">*</span></label>
+                                <select class="form-select text-secondary" id="role" required>
+                                    <option selected disabled>Choose an option</option>
+                                    <option>I am a SAA Business Partner</option>
+                                    <option>I am evaluating SAA Technology for a project</option>
+                                    <option>I am a Student</option>
+                                    <option>I am seeking employment with SAA</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <p>Please select the best option.
+                                    During the trial, we may share guidance on which features to explore. We may also reach out to you to check in on your progress and follow up after the trial is over. By participating in the trial, you agree to the SAA Privacy Statement.</p>
+                                    <hr>
+                                    <div class="g-recaptcha brochure__form__captcha" data-sitekey="6Lcn6E0pAAAAAOEiRJPordylYvVFc-Y9kC051bME" data-callback="validateCaptcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-i6gpsf899550" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lcn6E0pAAAAAOEiRJPordylYvVFc-Y9kC051bME&amp;co=aHR0cHM6Ly93d3cuc2FhLmFpOjQ0Mw..&amp;hl=en&amp;v=PcIQSvk4Y5ANjYUx0f4froA1&amp;size=normal&amp;cb=9wpf18sl5f8d"></iframe></div></div><iframe style="display: none;"></iframe><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div>
+                                    <br>
+                                   <div class="mb-3">
+                                      <button type="submit">Submit</button>
+                                    </div>
+                                   
+                                    <hr>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Next</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateCountryCode() {
+            var countryDropdown = document.getElementById("country");
+            var countryCode = document.getElementById("countryCode");
+
+            countryCode.innerText = countryDropdown.value;
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navigation = document.querySelector('.navigation');
+    
+            menuIcon.addEventListener('click', () => {
+                navigation.classList.toggle('active');
+            });
+        });
+    </script>
+    <script>
+
+        function toggleMobileMenu() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('mobile-active');
+        }
+    </script>
+    <script>
+        const dropdowns = document.querySelectorAll('.dropdown');
+    
+        dropdowns.forEach(dropdown => {
+          const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
+          const dropdownContent = dropdown.querySelector('.dropdown-content');
+    
+          // Toggle the dropdown visibility on click
+          dropdownToggle.addEventListener('click', function(event) {
+            event.preventDefault();
+            dropdownContent.classList.toggle('show'); // This will toggle visibility
+          });
+     
+          // Close the dropdown if clicked outside
+          document.addEventListener('click', function(event) {
+            if (!dropdownToggle.contains(event.target) && !dropdownContent.contains(event.target)) {
+              dropdownContent.classList.remove('show'); // Close dropdown if clicked outside
+            }
+          });
+        });
+    
+      </script>
+
+</body>
+</html>
+<style>
+   
+
+strong{
+    color: black;
+}
+
+    ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 100px;
+    margin-top:30px;
+    text-align: justify;
+}
+
+ul li {
+    margin-bottom: 50px; /* Adds spacing between items */
+    
+    align-items: center; /* Vertically aligns content */
+}
+
+ul li i {
+    margin-right: 10px; /* Adds spacing between icon and text */
+    color: #007bff; /* Customize icon color */
+}
+
+.my-list li {
+    text-align: justify;
+}
+
+.col-md-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+    position: relative;
+}
+body{
+    margin-top: 90px;
+}
+
+
+
+</style>
