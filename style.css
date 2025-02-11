@@ -498,7 +498,9 @@ margin-bottom: 30px;
 .features-container {
 padding-top: 40px;
 display: flex;
+/* grid-template-columns: auto auto auto; */
 justify-content: center;
+
 flex-wrap: wrap;
 gap: 20px;
 }
@@ -562,6 +564,7 @@ font-size: 2rem;
 .features-section p {
 font-size: 0.9rem;
 }
+
 
 .feature-card {
 width: 100%; /* Ensure cards stack properly */
