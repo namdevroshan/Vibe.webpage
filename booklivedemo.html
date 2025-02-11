@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg">
+        <div style="margin-left: 10px;">
+            <a class="navbar-brand py-0" href="#" >
+                <img class="bg-light rounded" src="Images/WhatsApp Image 2025-02-08 at 5.22.54 PM.jpeg" alt="Company Logo" width="84" height="48">
+           </a>
+            
+        </div>
+    </nav>
+   
+    <div class="mb-4" style="font-family: Oracle Sans!important;">
+        <!-- Header with Logo -->
+        
+        <div class="row" style="display: flex; flex-wrap: wrap;">
+            <div class="col-md-7 " style="background-color:lightslategray; padding: 20px;">
+                <div>
+                <div class="d-flex align-items-center mb-3" style="margin-top: 30px;margin-left: 100px;">
+                    <img src="Images/WhatsApp Image 2025-02-08 at 4.13.30 PM.jpeg" alt="VIBE Logo" width="70" class="me-2">
+                    <p class="mb-0 fw-bold" style="font-size: 20px; color:blue;">VIBE – The Future of Healthcare Data Management</p>
+                </div>
+                <h4 class="text-primary" style="margin-left: 100px;">See it in Action!</h4>
+                
+                <ul>
+                    <li><strong>Seamless Data Integration</strong><br> Empower healthcare organizations to effortlessly migrate, integrate, and manage clinical and operational data with VIBE’s intelligent data platform.</li>
+                    <li><strong>Advanced Data Security & Compliance</strong><br> Ensure secure, compliant, and real-time data exchange across systems with advanced data governance, encryption, and NHS data model support.</li>
+                    <li><strong>AI-Driven Data Automation</strong><br> Accelerate data workflows with automated extraction, transformation, and loading (ETL) powered by AI-driven analytics for faster, data-driven decisions.</li>
+                    <li><strong>Real-Time Insights & KPI Tracking</strong> <br>Gain deep insights into patient care, operational efficiency, and healthcare performance through dynamic dashboards and real-time KPI tracking.<br>Let me know if you'd like further refinements!</li>
+                </ul>
+                
+            </div>
+        </div>
+
+            <div class="col-md-5 "style="background-color: #f9f7ff;" >
+                <div class="text-center mb-4" style="margin-top: 30px;">            
+                    <h3 class="mt-2">Book a live demo</h3>                    
+                </div>
+                <div class="p-4">
+                    <!-- Collapsible Account Information -->
+                    
+
+                    <div>
+                        <form action="your-backend-endpoint" method="POST">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                          <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Business Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="countryCode">+91</span>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                            </div>
+                          </div>
+                            
+                            
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="country" class="form-label">Country/Region <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="country" required onchange="updateCountryCode()">
+                                        <option value="+91" selected>India</option>
+                                        <option value="+1">United States</option>
+                                        <option value="+44">United Kingdom</option>
+                                        <option value="+61">Australia</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="state" class="form-label">State/Province <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="state" required>
+                                        <option selected>Madhya Pradesh</option>
+                                        <option>Delhi</option>
+                                        <option>Maharashtra</option>
+                                        <option>Karnataka</option>
+                                        <option>Gujarat</option>
+                                    </select>
+                                </div>
+                            </div>
+                        <div class="row">                          
+                            <!-- Company -->
+                            <div class="col-md-6 mb-3">
+                                <label for="company" class="form-label">Company</label>
+                                <input type="text" class="form-control" id="company">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="role" class="form-label">Which best describes you? <span class="text-danger">*</span></label>
+                                <select class="form-select" id="role" required>
+                                    <option selected disabled>Choose an option</option>
+                                    <option>Developer</option>
+                                    <option>Business Owner</option>
+                                    <option>Student</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        
+                            
+                            <div class="mb-3">
+                                <p>Please select the best option.
+                                    During the trial, we may share guidance on which features to explore. We may also reach out to you to check in on your progress and follow up after the trial is over. By participating in the trial, you agree to the SAA Privacy Statement.</p>
+                                    <hr>
+                                    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY_HERE"></div>
+                                    <br>
+    
+                                      <button type="submit">Submit</button>
+                                   
+                                    <hr>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Next</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateCountryCode() {
+            var countryDropdown = document.getElementById("country");
+            var countryCode = document.getElementById("countryCode");
+
+            countryCode.innerText = countryDropdown.value;
+        }
+    </script>
+
+</body>
+</html>
+<style>
+   
+
+strong{
+    color: black;
+}
+
+    ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 100px;
+    margin-top:30px;
+    text-align: justify;
+}
+
+ul li {
+    margin-bottom: 50px; /* Adds spacing between items */
+    
+    align-items: center; /* Vertically aligns content */
+}
+
+ul li i {
+    margin-right: 10px; /* Adds spacing between icon and text */
+    color: #007bff; /* Customize icon color */
+}
+
+.my-list li {
+    text-align: justify;
+}
+
+.col-md-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+.navbar {
+            background-color:white; /* Navbar background color */
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important; /* White text for navbar */
+        }
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+</style>
+
