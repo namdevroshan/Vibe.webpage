@@ -4,23 +4,2122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trial Registration</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
 </head>
+<style>
+  .header-top-agile {
+    background: #000;
+    padding: 1em 3em 0;
+  }
+  
+  .logo-agileinfo {
+    float: left;
+  }
+  
+  .header-bottom-agile {
+    padding: 0 3em;
+    position: relative;
+  }
+  
+  .social-icons-agileits {
+    float: left;
+    padding-top: 0.8em;
+  }
+  
+  .social-icons-agileits ul li {
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+  
+  .social-icons-agileits ul li span {
+    color: #fff;
+    font-size: 1em;
+  }
+  
+  .social-icons-agileits ul li {
+    display: inline-block;
+  }
+  
+  .social-icons-agileits ul li a {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 10px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  
+  /*--social-icons--*/
+  
+  .social {
+    text-align: center;
+    transform: translateY(-50%);
+    float: right;
+    margin-top: 1.5em;
+  }
+  
+  .social li {
+    display: inline;
+    margin-right: 7px;
+  }
+  
+  .social .link {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    background-clip: content-box;
+    padding: 2px;
+    transition: 0.5s;
+    color: #d7d0be;
+    margin-right: 10px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+  }
+  
+  .social .link span {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+  }
+  
+  .social .link:hover {
+    color: white;
+    transform: translateX(0px) rotate(360deg);
+  }
+  
+  .social .link.google-plus {
+    background-color: tomato;
+    color: white;
+  }
+  
+  .social .link.twitter {
+    background-color: #00acee;
+    color: white;
+  }
+  
+  .social .link.facebook {
+    background-color: #3b5998;
+    color: white;
+  }
+  
+  /*--//social-icons--*/
+  
+  .navigation {
+    padding: 0;
+  }
+  
+  .navbar-default {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding-right: 5em;
+  }
+  
+  .navbar-collapse {
+    padding: 0;
+  }
+  
+  .nav > li > a {
+    padding: 1.4em 1.3em;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+  
+  .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 22px 20px !important;
+    text-transform: uppercase;
+    color: #02297D;
+  }
+  
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #000000;
+  }
+  
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+  }
+  
+  .codes-menu ul li {
+    display: block;
+  }
+  
+  .codes-menu ul li a {
+    display: block;
+    color: blue;
+    padding: 5px 20px;
+  }
+  
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    background-color: transparent;
+  }
+  
+  .dropdown-menu {
+    min-width: 130px;
+  }
+  
+  /* Effect 16: fall down */
+  
+  .cl-effect-16 a {
+    color: #f44236;
+    text-shadow: 0 0 1px rgba(111, 134, 134, 0.3);
+  }
+  
+  .cl-effect-16 a::before {
+    color: #f70255;
+    content: attr(data-hover);
+    position: absolute;
+    opacity: 0;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .cl-effect-16 a:hover::before,
+  .cl-effect-16 a:focus::before {
+    -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    -moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    opacity: 1;
+  }
+  
+  /*--//header--*/
+  
+  /*--banner--*/
+  
+  .center-container {
+    background: rgba(0, 0, 0, 0.21);
+  }
+  
+  .logo h1 {
+    font-size: 4em;
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+  .logo h1 a {
+    color: #e3535d;
+    text-decoration: none;
+  }
+  
+  .logo h1 a:hover {
+    color: #e3535d;
+  }
+  
+  .banner-text-info {
+    margin: 16em 0 19em;
+    text-align: center;
+  }
+  
+  .banner-text h3.bnr-title {
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: baskinvalley old face;
+    margin-left: -59px;
+    margin-top: 87px;
+    font-size: 42px;
+  }
+  
+  .cd-main-header {
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  
+  .cd-main-content.nav-is-visible,
+  .cd-main-header.nav-is-visible {
+    -webkit-transform: translateX(-260px);
+    -moz-transform: translateX(-260px);
+    -ms-transform: translateX(-260px);
+    -o-transform: translateX(-260px);
+    transform: translateX(-260px);
+  }
+  
+  .nav-on-left .cd-main-content.nav-is-visible,
+  .nav-on-left .cd-main-header.nav-is-visible {
+    -webkit-transform: translateX(260px);
+    /*-- w3layouts --*/
+    -moz-transform: translateX(260px);
+    -ms-transform: translateX(260px);
+    -o-transform: translateX(260px);
+    transform: translateX(260px);
+  }
+  
+  .cd-header-buttons {
+    position: absolute;
+    display: inline-block;
+    top: -57px;
+    right: 0;
+  }
+  
+  .cd-header-buttons li {
+    display: inline-block;
+  }
+  
+  .cd-search-trigger,
+  .cd-nav-trigger {
+    position: relative;
+    display: block;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: transparent;
+    z-index: 3;
+  }
+  
+  .cd-search-trigger::before,
+  .cd-search-trigger::after {
+    /* search icon */
+    content: "";
+    position: absolute;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .cd-search-trigger::before {
+    top: 11px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    /*-- agileits --*/
+    border: 3px solid #000;
+  }
+  
+  .cd-search-trigger::after {
+    /* handle */
+    height: 3px;
+    width: 8px;
+    background: #000;
+    bottom: 14px;
+    right: 11px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .cd-search-trigger span {
+    /* container for the X icon */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .cd-search-trigger span::before,
+  .cd-search-trigger span::after {
+    /* close icon */
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 3px;
+    width: 22px;
+    top: 50%;
+    margin-top: -2px;
+    left: 50%;
+    margin-left: -11px;
+    background: #000;
+    opacity: 0;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .cd-search-trigger span::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .cd-search-trigger span::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  .cd-search-trigger.search-is-visible::before,
+  .cd-search-trigger.search-is-visible::after {
+    /* hide search icon */
+    -moz-opacity: 0;
+    opacity: 0;
+  }
+  
+  .cd-search-trigger.search-is-visible span::before,
+  .cd-search-trigger.search-is-visible span::after {
+    /* show close icon */
+    -moz-opacity: 1;
+    opacity: 1;
+  }
+  
+  .cd-search-trigger.search-is-visible span::before {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  .cd-search-trigger.search-is-visible span::after {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .cd-search {
+    position: absolute;
+    width: 100%;
+    top: 92%;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  }
+  
+  .cd-search input {
+    border-radius: 0;
+    border: none;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    padding: 0 5%;
+    -webkit-box-shadow: inset 0 1px 0 #f44236, 0 3px 6px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 #f44236, 0 3px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 #f44236, 0 3px 6px rgba(0, 0, 0, 0.05);
+    font-size: 1.2em;
+    padding: 1em 2em;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  
+  .cd-search input::-webkit-input-placeholder {
+    color: #fff !important;
+  }
+  
+  .cd-search input::-moz-placeholder {
+    color: #fff !important;
+  }
+  
+  .cd-search input:-moz-placeholder {
+    color: #fff !important;
+  }
+  
+  .cd-search input:-ms-input-placeholder {
+    color: #fff !important;
+  }
+  
+  .cd-search input:focus {
+    outline: none;
+  }
+  
+  .cd-search.is-visible {
+    -moz-opacity: 1;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+  }
+  
+  .banner {
+    position: relative;
+  }
+  
+  .we-po-head {
+    position: absolute;
+    top: 11%;
+    left: 2%;
+  }
+  
+  .about_section,
+  .sect-main-con,
+  .gallery,
+  .team,
+  .contact-w3l {
+    padding: 5em 0;
+  }
+  
+  .news {
+    padding-bottom: 5em;
+  }
+  
+  .about_section {
+    position: relative;
+    background: #b60965;
+    color: #fff;
+  }
+  
+  .banner-bottom {
+    padding-top: 3em;
+  }
+  
+  .wthree_title_agile {
+    text-align: center;
+  }
+  
+  h2.wthree_title_agile,
+  h3.wthree_title_agile {
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+    color: #000;
+  }
+  
+  h2.wthree_title_agile span,
+  h3.wthree_title_agile span {
+    font-family: "Arizonia", cursive;
+    letter-spacing: 10px;
+    font-size: 1.3em;
+    color: #3d5ae8;
+  }
+  
+  h2.wthree_title_agile,
+  .gallery h3.wthree_title_agile {
+    color: #fff;
+  }
+  
+  .icons ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .icons ul li {
+    display: inline-block;
+  }
+  
+  .icons ul li.team-twitter {
+    margin: 0 1em;
+  }
+  
+  .icons ul li a i {
+    color: #fff;
+    text-align: center;
+    height: 32px;
+    width: 32px;
+    background: #181819;
+    line-height: 30px;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  
+  .icons ul li a i:hover {
+    color: #fff;
+    background: #3d5ae8;
+  }
+  
+  .team-grid {
+    text-align: center;
+  }
+  
+  .info {
+    position: relative;
+    padding-top: 2em;
+  }
+  
+  /*-- arrow-animation --*/
+  
+  .arrow-container,
+  .arrow-1 {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .arrow-container {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    top: 36%;
+  }
+  
+  .arrow-1 {
+    background: #1bbde8;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .arrow-2 {
+    width: 60px;
+    height: 60px;
+    background: #3d5ae8;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    display: table;
+  }
+  
+  .arrow-2:focus {
+    text-decoration: none;
+  }
+  
+  .arrow-2:before {
+    width: 52px;
+    height: 52px;
+    content: "";
+    border: 2px solid rgba(61, 90, 232, 0.49);
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+  }
+  
+  .arrow-2 i.fa {
+    font-size: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Custom Animate.css */
+  
+  .animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.4, 0.4, 0.4);
+      transform: scale3d(0.4, 0.4, 0.4);
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.4, 0.4, 0.4);
+      transform: scale3d(0.4, 0.4, 0.4);
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+  
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  /*-- //arrow-animation --*/
+  
+  .info h3 {
+    padding-bottom: 2em;
+  }
+  
+  .info h3,
+  .info h4 {
+    font-size: 4em;
+    font-family: "Arizonia", cursive;
+  }
+  
+  .team-grid p {
+    color: #fff;
+    font-size: 0.9em;
+    padding: 2em 0;
+  }
+  
+  .w3l-poi {
+    position: absolute;
+    top: 70.7%;
+    transform: rotate(13deg);
+  }
+  
+  /*-- Services --*/
+  
+  .serve-grids-top h5 {
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0 0 0.8em;
+    text-transform: capitalize;
+  }
+  
+  .serve-grids-top.second {
+    margin-top: 3em;
+  }
+  
+  .service-box:nth-child(2) {
+    margin: 3em 0;
+  }
+  
+  .service-box:nth-child(4) {
+    margin-top: 3em;
+  }
+  
+  /*-- services-effects --*/
+  
+  .hi-icon-wrap {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2em 0 3em;
+  }
+  
+  span.hi-icon {
+    color: #fff;
+  }
+  
+  span.hi-icon {
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: #f87900;
+    padding: 5px;
+  }
+  
+  .hi-icon {
+    display: inline-block;
+    font-size: 0px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #111;
+  }
+  
+  .hi-icon:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: "";
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  
+  .hi-icon:before {
+    speak: none;
+    font-size: 20px;
+    line-height: 70px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  @-webkit-keyframes spinAround {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+  
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @-moz-keyframes spinAround {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+  
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spinAround {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @-webkit-keyframes toRightFromLeft {
+    49% {
+      -webkit-transform: translate(100%);
+    }
+  
+    50% {
+      opacity: 0;
+      -webkit-transform: translate(-100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes toRightFromLeft {
+    49% {
+      -moz-transform: translate(100%);
+    }
+  
+    50% {
+      opacity: 0;
+      -moz-transform: translate(-100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes toRightFromLeft {
+    49% {
+      transform: translate(100%);
+    }
+  
+    50% {
+      opacity: 0;
+      transform: translate(-100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes toLeftFromRight {
+    49% {
+      -webkit-transform: translate(-100%);
+    }
+  
+    50% {
+      opacity: 0;
+      -webkit-transform: translate(100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes toLeftFromRight {
+    49% {
+      -moz-transform: translate(-100%);
+    }
+  
+    50% {
+      opacity: 0;
+      -moz-transform: translate(100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes toLeftFromRight {
+    49% {
+      transform: translate(-100%);
+    }
+  
+    50% {
+      opacity: 0;
+      transform: translate(100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes toTopFromBottom {
+    49% {
+      -webkit-transform: translateY(-100%);
+    }
+  
+    50% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes toTopFromBottom {
+    49% {
+      -moz-transform: translateY(-100%);
+    }
+  
+    50% {
+      opacity: 0;
+      -moz-transform: translateY(100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes toTopFromBottom {
+    49% {
+      transform: translateY(-100%);
+    }
+  
+    50% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes toBottomFromTop {
+    49% {
+      -webkit-transform: translateY(100%);
+    }
+  
+    50% {
+      opacity: 0;
+      -webkit-transform: translateY(-100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes toBottomFromTop {
+    49% {
+      -moz-transform: translateY(100%);
+    }
+  
+    50% {
+      opacity: 0;
+      -moz-transform: translateY(-100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes toBottomFromTop {
+    49% {
+      transform: translateY(100%);
+    }
+  
+    50% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }
+  
+  /* Effect 6 */
+  
+  .hi-icon-effect-6 .hi-icon {
+    box-shadow: 0 0 0 2px #3d5ae8;
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+  }
+  
+  .hi-icon-effect-6 .hi-icon:hover {
+    background: #3d5ae8;
+    color: #fff;
+  }
+  
+  .hi-icon-effect-6 .hi-icon:hover:before {
+    -webkit-animation: spinAround 2s linear infinite;
+    -moz-animation: spinAround 2s linear infinite;
+    animation: spinAround 2s linear infinite;
+  }
+  
+  @media (max-width: 320px) {
+    .hi-icon {
+      width: 55px;
+      height: 55px;
+    }
+  
+    .hi-icon:before {
+      speak: none;
+      font-size: 22px;
+      line-height: 55px;
+    }
+  }
+  
+  /*-- //services-effects --*/
+  
+  /*-- model --*/
+  
+  /* .modal-header h4 {
+      color: #f70255;
+      font-size: 2em;
+      letter-spacing: 1px;
+      text-align: center;
+      margin: .5em 0 1em;
+  }
+  .modal-header span {
+      font-size: 1em;
+      color: #777;
+      letter-spacing: 1px;
+      line-height: 33px;
+      padding-bottom: 16px;
+      display:inline-block;
+      margin-top:1em;
+  }
+  .modal-header img{
+      float: left;
+      width: 100%;
+  } */
+  
+  /*-- //model --*/
+  
+  a.view.rew3 {
+    font-size: 1.1em;
+    background: none;
+    color: #f70255;
+    margin: 3em 0 0.2em;
+    display: inline-block;
+    letter-spacing: 1px;
+  }
+  
+  a.view.rew3:hover {
+    color: #3d5ae8;
+  }
+  
+  a.view.rew3 span {
+    padding-right: 1em;
+  }
+  
+  /*-- //Services --*/
+  
+  .service-1 h4,
+  .service-2 h4,
+  .service h4 {
+    font-size: 2.3em;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+  }
+  
+  .service-2 a {
+    color: #fff;
+    font-size: 1.4em;
+    display: block;
+    letter-spacing: 1px;
+    padding: 0.5em;
+    border: 1px solid #fff;
+    margin: 1.27em 0 0;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  
+  .service-2 a:hover {
+    border: 1px solid #f70255;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  
+  .service-1 {
+    padding-left: 14em;
+    background: white;
+    padding: 3em 2em 3em 15em;
+  }
+  
+  .service-1 h6 {
+    font-family: "Arizonia", cursive;
+    font-size: 3em;
+    letter-spacing: 7px;
+    float: left;
+    padding: 0.3em 0.5em 0;
+    color: white;
+    margin-left: 30px;
+  }
+  
+  .service-1 p {
+    margin-bottom: 3em;
+  }
+  
+  .service-2 {
+    background: #889bf9;
+    padding: 3em 2em;
+    color: #fff;
+  }
+  
+  .service {
+    background: rgba(249, 17, 96, 0.64);
+    padding: 5em 4em 6.95em;
+    color: #fff;
+  }
+  
+  .hi-icon-effect-6 {
+    float: left;
+    width: 15%;
+  }
+  
+  .hi-text {
+    float: left;
+    width: 75%;
+  }
+  
+  .hi-text p {
+    color: #efefef;
+  }
+  
+  .service-1 img {
+    width: 100%;
+  }
+  
+  /*-- Gallery --*/
+  
+  .gallery-grids img {
+    width: 100%;
+  }
+  
+  .gallery-grids {
+    padding: 0;
+  }
+  
+  /*-- gallery-hover effect --*/
+  
+  .w3ls-hover {
+    background-color: #fff;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    text-align: center;
+  }
+  
+  .w3ls-hover img {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  .w3ls-hover .view-caption {
+    padding: 7em 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  
+  .w3ls-hover .view-caption h5 {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: normal;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+  
+  .w3ls-hover .view-caption span {
+    color: #fff;
+    font-size: 1em;
+    margin-top: 5%;
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 12px;
+  }
+  
+  .w3ls-hover:hover .view-caption {
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+  
+  .w3ls-hover .view-caption span:hover {
+    color: #f70255;
+    border-color: #f70255;
+  }
+  
+  /*-- //Gallery --*/
+  
+  /*-contact-page-*/
+  
+  .contact-page-w3-agile {
+    padding-bottom: 0em !important;
+  }
+  
+  .contact-page-w3-agile iframe {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .contact-page .form-bg-w3ls {
+    width: 100% !important;
+  }
+  
+  .contact-page .regstr-r-w3-agileits {
+    padding: 0 !important;
+  }
+  
+  ul.resp-tabs-list {
+    margin: 0 auto;
+    width: 89%;
+  }
+  
+  .resp-tab-content {
+    padding: 2em 2em 0;
+  }
+  
+  .resp-tab-content iframe {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 1em;
+    height: 200px;
+  }
+  
+  .resp-tab-active,
+  .resp-tabs-list li:hover,
+  li.resp-tab-item.resp-tab-active {
+    border-bottom: none;
+    background: none;
+    color: #000;
+    border-bottom: 2px solid #3d5ae8;
+  }
+  
+  .resp-tabs-list li {
+    color: #000;
+    background: transparent;
+    border: none;
+  }
+  
+  .resp-tabs-container p i {
+    color: #f70255;
+    font-size: 1.4em;
+    padding-right: 1em;
+  }
+  
+  .resp-tabs-container p a {
+    color: #000;
+    letter-spacing: 0.5px;
+  }
+  
+  .resp-tabs-container p a:hover {
+    color: #3d5ae8;
+  }
+  
+  .contact-agileits-w3layouts {
+    margin-top: 2.5em;
+  }
+  
+  p.para-agileits-w3layouts:nth-child(2) {
+    padding: 1.5em 0;
+  }
+  
+  /*-//contact-page-*/
+  
+  /*--//placeholder-color--*/
+  
+  /*-//contact-page-*/
+  
+  .agileits-social ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+  }
+  
+  .agileits-social ul li {
+    display: inline-block;
+  }
+  
+  .agileits-social ul li a {
+    color: #333;
+    text-align: center;
+  }
+  
+  .agileits-social ul li a i.fa.fa-facebook {
+    height: 40px;
+    width: 40px;
+    background: #3b5998;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  
+  .agileits-social ul li a i.fa.fa-facebook:hover {
+    opacity: 0.8;
+  }
+  
+  .agileits-social ul li a i.fa.fa-twitter {
+    height: 40px;
+    width: 40px;
+    background: #1da1f2;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  
+  .agileits-social ul li a i.fa.fa-twitter:hover {
+    opacity: 0.8;
+  }
+  
+  .agileits-social ul li a i.fa.fa-rss {
+    height: 40px;
+    width: 40px;
+    background: #f26522;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  
+  .agileits-social ul li a i.fa.fa-rss:hover {
+    opacity: 0.8;
+  }
+  
+  .agileits-social ul li a i.fa.fa-vk {
+    height: 40px;
+    width: 40px;
+    background: #45668e;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  
+  .agileits-social ul li a i.fa.fa-vk:hover {
+    opacity: 0.8;
+  }
+  
+  .agileits-social ul li:nth-child(2) {
+    margin: 0 0.5em;
+  }
+  
+  .agileits-social ul li:nth-child(3) {
+    margin: 0 0.5em 0 0;
+  }
+  
+  .agileits-social {
+    padding: 2em 0;
+  }
+  
+  .w3l-button a {
+    color: #000000;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 0.7em 3em;
+    font-weight: 600;
+    text-align: center;
+    border: solid 1px #000000;
+  }
+  
+  .w3l-button a:hover {
+    background: #f70255;
+    border: solid 1px #f70255;
+    color: #ffffff;
+  }
+  
+  .agile-news-right.w3l-newsw {
+    margin: 0 0 2.2em;
+  }
+  
+  /*-- //news --*/
+  
+  /*--team-starts--*/
+  
+  .gallery {
+    background: url(../images/bg.jpg) no-repeat 0px 0px fixed;
+    background-size: cover;
+  }
+  
+  .agile_team_grids {
+    margin-top: 3em;
+  }
+  
+  .team-left-w3l-agile {
+    float: left;
+    width: 24%;
+    position: relative;
+    padding: 10px;
+    margin: 0 0 5px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 1%;
+  }
+  
+  .team-left-w3l-agile:before {
+    bottom: -4px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    content: "";
+    height: 3px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 98%;
+  }
+  
+  .team-left-w3l-agile:after {
+    bottom: -8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    content: "";
+    height: 3px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 96%;
+  }
+  
+  ul.social-icons li {
+    display: inline-block;
+    margin-right: 12px;
+  }
+  
+  ul.social-icons li a {
+    color: #fff;
+  }
+  
+  .agile_team_grid1 {
+    text-align: center;
+    padding: 1em 0;
+    border-bottom: 3px solid #f70255;
+  }
+  
+  .agile_team_grid1 h3 {
+    font-size: 1.6em;
+    color: #3d5ae8;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+  }
+  
+  .agile_team_grid_main {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .agile_team_grid_main .p-mask {
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.72);
+    bottom: 0%;
+    position: absolute;
+    padding: 1em 0 0.6em;
+    width: 100%;
+    -webkit-transform: translate3d(0px, 100%, 0px);
+    -moz-transform: translate3d(0px, 100%, 0px);
+    -ms-transform: translate3d(0px, 100%, 0px);
+    -o-transform: translate3d(0px, 100%, 0px);
+    transform: translate3d(0px, 100%, 0px);
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    text-align: center;
+  }
+  
+  .agile_team_grid:hover .p-mask {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }
+  
+  /*--team-ends--*/
+  
+  /*-- /counter-agile --*/
+  
+  .agileinfo_counter_section {
+    background: url(../images/bg2.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    padding: 6em 0;
+  }
+  
+  .agileinfo_counter_section h3 {
+    font-family: "Arizonia", cursive;
+    color: #fff;
+    font-size: 4em;
+    letter-spacing: 2px;
+  }
+  
+  .agileinfo_counter_section p {
+    padding: 1em 0;
+    color: #eaeaea;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+  }
+  
+  /*--responsive--*/
+  
+  @media (max-width: 1680px) {
+    .service-2 a {
+      margin: 1.07em 0 0;
+    }
+}
+.navbar .megamenu {
+    padding: 1rem;
+  }
+  
+  .navbar .megamenu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+  }
+  
+  .navbar .megamenu a:hover {
+    /* color: #f0cc71; */
+    color: #267CFC;
+    text-decoration: underline;
+  }
+  
+  .navbar .megamenu .col-megamenu .list-unstyled li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+  }
+  
+  .navbar .has-megamenu .dropdown-toggle::after {
+    display: none;
+  }
+  
+  .navbar .has-megamenu .nav-link.show {
+    background: rgb(248, 249, 250);
+    height: 85%;
+    padding-top: 12px !important;
+    color: #000;
+  }
+  
+  .nav-link dropdown-toggle:hover{
+  color: #00acee;
+  }
+  .megamenu .megamenu-header-text {
+    color: #fff;
+  }
+  
+  .megamenu .megamenu-header-text h5 {
+    font-size: 30px;
+  }
+  
+  .megamenu .megamenu-header-text p {
+    font-size: 18px;
+  }
+  
+  @media all and (min-width: 992px) {
+    .navbar .has-megamenu {
+      position: static !important;
+      display: flex;
+      align-items: end;
+    }
+  
+    .navbar .megamenu {
+      left: 0;
+      right: 0;
+      width: 100%;
+      margin-top: 0;
+      background: gainsboro;
+      color: #000 !important;
+    }
+  }
+  
+  /* ============ mobile view megamenu ============ */
+  
+  @media (max-width: 991px) {
+    .navbar.fixed-top .navbar-collapse,
+    .navbar.sticky-top .navbar-collapse {
+      overflow-y: auto;
+      max-height: 90vh;
+      margin-top: 10px;
+    }
+  }
+  strong{
+    color: black;
+}
+
+    ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 100px;
+    margin-top:30px;
+    text-align: justify;
+}
+
+ul li {
+    margin-bottom: 50px; /* Adds spacing between items */
+    
+    align-items: center; /* Vertically aligns content */
+}
+
+ul li i {
+    margin-right: 10px; /* Adds spacing between icon and text */
+    color: #007bff; /* Customize icon color */
+}
+
+.my-list li {
+    text-align: justify;
+}
+
+.col-md-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+.navbar {
+            background-color:white; /* Navbar background color */
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important; /* White text for navbar */
+        }
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+  
+</style>
+<body>
+    <!-- <div class="loading-page" id="loadingPage" >
+        <video autoplay muted loop class="loading-video" >
+            <source src="./opening laod.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div> -->
+    <nav class="navbar navbar-default navbar-expand-lg sticky-top py-lg-0 active-nav" id="main-navbar" style="background:white" ;>
+      <div class="container-fluid">
+          <a class="navbar-brand py-0" href="https://www.saa.ai/">
+              <img src="logo.jpeg" alt="Bootstrap" width="90" height="60" class="bg-light rounded">
+          </a>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation" id="navbar-collapser">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown has-megamenu">
+                  <a class="nav-link dropdown-toggle" aria-current="page" data-bs-toggle="dropdown"
+                      data-bs-auto-close="outside" href="industry.php">VIBE</a>
+                  <div class="dropdown-menu megamenu border-0 p-0" role="menu">
+                      <div class="row g-3 mx-0">
+                          <div class="col-lg-3 p-lg-3 col-md-12 bg-orange d-flex" style="background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);">
+                              <div class="megamenu-header-text">
+                                  <h5>VIBE</h5>
+                                  <p class="fs-6">
+                                    Our Healthcare Data Platform, built on Microsoft Fabric, is a comprehensive cloud-based data warehouse solution specifically designed for the NHS (National Health Service).
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="col-lg-9 p-lg-3 col-md-12 px-3 py-4 bg-light">
+                              <div class="row">
+                                  <div class="col-lg-4 p-lg-3 col-6">
+                                      <div class="col-megamenu">
+                                          <h5><a href="index.html">About VIBE</a></h5>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-4 p-lg-3 col-6">
+                                      <div class="col-megamenu">
+                                          <h5><a href="Extraction.html">Data Extract</a></h5>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-4 p-lg-3 col-6">
+                                      <div class="col-megamenu">
+                                          <h5><a href="Transformation.html">Data Transform</a></h5>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-4 p-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h5><a href="Modeling.html">Data Model</a></h5>
+                                    </div>
+                                </div>
+                                  <div class="col-lg-4 p-lg-3 col-6">
+                                      <div class="col-megamenu">
+                                          <h5><a href="Workflow.html">Data Workflow Management</a></h5>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-4 p-lg-3 col-6">
+                                      <div class="col-megamenu">
+                                          <h5><a href="Management.html">Master Data Management</a></h5>
+                                      </div>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+                  <li class="nav-item dropdown has-megamenu">
+                      <a class="nav-link dropdown-toggle" aria-current="page" href="products.php"
+                          data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
+                      <div class="dropdown-menu megamenu border-0 p-0" role="menu">
+                          <div class="row g-3 mx-0">
+                              <div class="col-lg-3 p-lg-3 col-md-12 bg-orange d-flex" style="background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);">
+                                  <div class="megamenu-header-text" >
+                                      <h5>Products</h5>
+                                      <p class="fs-6">
+                                          Unleash the Extraordinary - Our products are a fusion of technology and
+                                          excellence, elevating your journey.
+                                      </p>
+                                      <p class="fs-6">
+                                          Begin an Expedition of Exploration with Our Comprehensive Product Selection.
+                                          Navigate through our dynamic product spectrum, continually fine-tuned to
+                                          align with our clients' evolving requirements.
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="col-lg-9 p-lg-3 col-md-12 px-3 py-4 bg-light">
+                                  <div class="row">
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5 style="color: #267CFC;">Banking & Finance</h5>
+                                              <ul class="list-unstyled">
+                                                  <li><a href="https://www.saa.ai/P&L.php">Financial Analysis </a></li>
+                                              </ul>
+                                          </div>
+
+                                      </div>
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5 style="color: #267CFC;">Road Infrastructure (Highways)</h5>
+                                              <ul class="list-unstyled">
+                                                  <li><a href="https://www.saa.ai/NPD.php">Vehicle Number Plate Detection</a></li>
+                                                  <li><a href="https://www.saa.ai/HLMV.php">HMV & LMV Detection </a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5 style="color: #267CFC;">Information Technology</h5>
+                                              <ul class="list-unstyled">
+                                                  <li><a href="https://www.saa.ai/real-time-data-connector.php">Real Time Data
+                                                          Connector</a></li>
+                                                  <li><a href="https://www.saa.ai/data-flow-rule-engine.php">Data Flow Rule Engine</a>
+                                                  </li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5 style="color: #267CFC;">Healthcare</h5>
+                                              <ul class="list-unstyled">
+                                                  <li><a href="https://www.saa.ai/nhs-data-warehouse.php">NHS Data Warehouse</a></li>
+                                                  <li><a href="medical-data-achieving-solution.php">Medical Data
+                                                          Archiving
+                                                          Solution</a>
+                                                  </li>
+                                                  <li><a href="commissioning-data-extraction-and-reporting.php">Commissioning
+                                                          Data Extraction & Reporting</a></li>
+                                                  <li><a href="https://www.saa.ai/population-health-management-and-analytics.php">Population
+                                                          Health Management & Analytics</a></li>
+                                                  <li><a href="https://www.saa.ai/BEDM.php">Patient Bed Management</a></li>
+                                                  <!-- <li><a href="#">Healthcare Data Migration</a></li> -->
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5 style="color: #267CFC;">Retail</h5>
+                                              <ul class="list-unstyled">
+                                                  <li><a href="https://www.saa.ai/logo.php">Logo Identification </a></li>
+                                                  <li><a href="https://www.saa.ai/FFD.php">Foot Fall Detection </a></li>
+                                                  <li><a href="https://www.saa.ai/hyper-local-delivery-applications.php">Hyper Local
+                                                          Delivery
+                                                          Applications </a></li>
+                                                  <li><a href="https://www.saa.ai/product-scrapping-and-price-analysis.php">Product
+                                                          Scrapping &
+                                                          Price Analysis </a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5 style="color: #267CFC;">Social & Crime</h5>
+                                              <ul class="list-unstyled">
+                                                  <li><a href="https://www.saa.ai/care.php">CARE Application</a></li>
+                                                  <li><a href="https://www.saa.ai/CFR.php">Face Recognition</a></li>
+                                                  <li><a href="https://www.saa.ai/FED.php">Facial Expression Detection</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown has-megamenu">
+                      <a class="nav-link dropdown-toggle" aria-current="page" data-bs-toggle="dropdown"
+                          data-bs-auto-close="outside" href="industry.php">Solutions</a>
+                      <div class="dropdown-menu megamenu border-0 p-0" role="menu">
+                          <div class="row g-3 mx-0">
+                              <div class="col-lg-3 p-lg-3 col-md-12 bg-orange d-flex" style="background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);">
+                                  <div class="megamenu-header-text">
+                                      <h5>Solutions</h5>
+                                      <p class="fs-6">
+                                          Explore our ever-evolving portfolio, meticulously tailored to lead the
+                                          charge against our clients' perpetually shifting requirements.
+                                      </p>
+                                      <p class="fs-6">
+                                          Choose a partner with an intimate understanding and experience to architect
+                                          solutions tailored precisely to your needs, all within an impressive legacy
+                                          of shaping the future.
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="col-lg-9 p-lg-3 col-md-12 px-3 py-4 bg-light">
+                                  <div class="row">
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5 style="color: #267CFC;">Analytics</h5>
+                                              <ul class="list-unstyled">
+                                                  <li><a href="https://www.saa.ai/visualizations-and-dashboards.php">Visualizations &
+                                                          Dashboards</a></li>
+                                                  <li><a href="https://www.saa.ai/ai-and-machine-learning.php">AI & Machine Learning</a>
+                                                  </li>
+                                                  <li><a href="https://www.saa.ai/data-monitoring-and-action.php">Data Monitoring &
+                                                          Action</a>
+                                                  </li>
+                                                  <li><a href="https://www.saa.ai/embedded-analytics.php">Embedded Analytics</a></li>
+                                                  <li><a href="https://www.saa.ai/data-scrapping.php">Data Scrapping</a></li>
+                                              </ul>
+                                          </div>
+                                          <div class="col-megamenu mt-4">
+                                              <h5 style="color: #267CFC;">Digital Marketing</h5>
+                                              <ul class="list-unstyled">
+                                                  <li><a href="search-engine-optimization.php">Search Engine
+                                                          Optimization
+                                                          (SEO)</a></li>
+                                                  <li><a href="social-handle-boosting.php">Social Handle Boosting</a>
+                                                  </li>
+                                                  <li><a href="promotions-and-broadcasting.php">Promotions &
+                                                          Broadcasting</a>
+                                                  </li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5 style="color: #267CFC;">Data Integration</h5>
+                                              <ul class="list-unstyled">
+                                                  <li><a href="https://www.saa.ai/application-automation.php">Application Automation</a>
+                                                  </li>
+                                                  <li><a href="https://www.saa.ai/data-lake-creation.php">Data Lake Creation</a></li>
+                                                  <li><a href="https://www.saa.ai/data-lineage.php">Data Lineage</a></li>
+                                                  <li><a href="https://www.saa.ai/data-simulation.php">Data Simulation</a></li>
+                                                  <li><a href="https://www.saa.ai/data-streaming.php">Data Streaming (CDC)</a></li>
+                                                  <li><a href="https://www.saa.ai/data-warehouse-automation.php">Data Warehouse
+                                                          Automation </a>
+                                                  </li>
+                                                  <li><a href="https://www.saa.ai/extract-load-transformation.php">Extract Load &
+                                                          Transformation
+                                                          (ELT) </a></li>
+                                                  <li><a href="https://www.saa.ai/key-performance-indicator-automation.php">Key
+                                                          Performance
+                                                          Indicator Automation </a></li>
+                                                  <li><a href="https://www.saa.ai/data-migration.php">Data Migration</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5 style="color: #267CFC;">Mobile Application</h5>
+                                              <ul class="list-unstyled">
+                                                  <li><a href="https://www.saa.ai/mobile-application.php#android">Android</a></li>
+                                                  <li><a href="https://www.saa.ai/mobile-application.php#ios">iOS</a></li>
+                                                  <li><a href="https://www.saa.ai/mobile-application.php#hybrid">Hybrid</a></li>
+                                              </ul>
+                                          </div>
+                                          <div class="col-megamenu mt-4">
+                                              <h5 style="color: #267CFC;">Web Application Development</h5>
+                                              <ul class="list-unstyled">
+                                                  <li><a href="https://www.saa.ai/web-application-development.php#ecommerce">E-commerce
+                                                          Application</a>
+                                                  </li>
+                                                  <li><a href="https://www.saa.ai/web-application-development.php#wordpress">Web Flow &
+                                                          WordPress</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
 
 
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg">
-        <div style="margin-left: 10px;">
-            <a class="navbar-brand py-0" href="#" >
-                <img class="bg-light rounded" src="Images/WhatsApp Image 2025-02-08 at 5.22.54 PM.jpeg" alt="Company Logo" width="84" height="48">
-           </a>
-            
-        </div>
-    </nav>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown has-megamenu">
+                      <a class="nav-link dropdown-toggle" aria-current="page" data-bs-toggle="dropdown"
+                          data-bs-auto-close="outside" href="industry.php">Industries</a>
+                      <div class="dropdown-menu megamenu border-0 p-0" role="menu">
+                          <div class="row g-3 mx-0">
+                              <div class="col-lg-3 p-lg-3 col-md-12 bg-orange d-flex" style="background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);">
+                                  <div class="megamenu-header-text">
+                                      <h5>Industries</h5>
+                                      <p class="fs-6">
+                                          SAA boasts an unparalleled comprehension of your industry, a deeply attuned
+                                          alignment with your sector's intricacies, and a visionary track record in
+                                          shaping its destiny.
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="col-lg-9 p-lg-3 col-md-12 px-3 py-4 bg-light">
+                                  <div class="row">
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5><a href="https://www.saa.ai/finance.php">Banking & Finance</a></h5>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5><a href="https://www.saa.ai/highways.php">Road Infrastructure (Highways)</a></h5>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5><a href="https://www.saa.ai/healthcare.php">Healthcare</a></h5>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5><a href="https://www.saa.ai/retail.php">Retail</a></h5>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5><a href="https://www.saa.ai/social.php">Social & Crime</a></h5>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 p-lg-3 col-6">
+                                          <div class="col-megamenu">
+                                              <h5><a href="https://www.saa.ai/information-technology.php">Information Technology</a></h5>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown has-megamenu">
+                    <a class="nav-link dropdown-toggle" aria-current="page" data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside" href="industry.php">RESOURCING</a>
+                    <div class="dropdown-menu megamenu border-0 p-0" role="menu">
+                        <div class="row g-3 mx-0">
+                            <div class="col-lg-3 p-lg-3 col-md-12 bg-orange d-flex" style="background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);">
+                                <div class="megamenu-header-text">
+                                    <h5>Resourcing</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 p-lg-3 col-md-12 px-3 py-4 bg-light">
+                                <div class="row">
+                                    <div class="col-lg-4 p-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5><a href="https://www.saa.ai/resource_pool.php">IT Staff Augmentation</a></h5>
+                                            <h5><a href="https://www.saa.ai/careers.php">Career with SAA</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class=" nav-item">
+                  <a class="nav-link" href="https://www.saa.ai/company.php">ABOUT SAA</a>
+              </li>
+                  <li class=" nav-item">
+                      <a class="nav-link" href="https://www.saa.ai/contact.php">Contact Us</a>
+                  </li>
+              </ul>
+              <form class="d-flex" role="search" id="nav-right-icons">
+                  <!-- <form role="search" method="get" class="search-form" action="" style="margin-right:2px">
+                      <label>
+                          <input type="search" autocomplete="off" class="search-field me-2" placeholder="Search …" value="" name="s" title="Search for:" />
+                      </label>
+                  </form> -->
+                  <!-- <a class="text-decoration-none me-2 login-link dropdown" href="#">
+                      <i class="fa fa-user text-light fs-5 dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-hidden="true" style="line-height: 34px;"></i>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                  </a> -->
+
+
+                  <div class="text-decoration-none me-2 login-link dropdown d-flex">
+                    <a class="nav-link" href="https://www.saa.ai/login.php" role="button" aria-expanded="false" style="color: #02297D;">
+                        <i class="fa fa-user fs-5" aria-hidden="true" style="color: #02297D;"></i>
+                    </a>
+                </div>
+                
+                  
+
+              </form>
+          </div>
+      </div>
+  </nav>
    
     <div class="mb-4" style="font-family: Oracle Sans!important;">
         <!-- Header with Logo -->
@@ -151,49 +2250,5 @@
 
 </body>
 </html>
-<style>
-   
 
-strong{
-    color: black;
-}
-
-    ul {
-    list-style: none; /* Removes bullet points */
-    padding: 0;
-    margin: 100px;
-    margin-top:30px;
-    text-align: justify;
-}
-
-ul li {
-    margin-bottom: 50px; /* Adds spacing between items */
-    
-    align-items: center; /* Vertically aligns content */
-}
-
-ul li i {
-    margin-right: 10px; /* Adds spacing between icon and text */
-    color: #007bff; /* Customize icon color */
-}
-
-.my-list li {
-    text-align: justify;
-}
-
-.col-md-7 {
-    flex: 0 0 auto;
-    width: 58.33333333%;
-}
-.navbar {
-            background-color:white; /* Navbar background color */
-        }
-        .navbar-brand, .nav-link {
-            color: #fff !important; /* White text for navbar */
-        }
-        .nav-link:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-        }
-</style>
 

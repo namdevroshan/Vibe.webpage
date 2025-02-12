@@ -1702,6 +1702,9 @@ color: #ffffff ;
         transform: rotate(90deg);
     }
 }
+.container3{
+    display: flex;
+}
 
 .wellness-container {
     margin: 60px;
@@ -1795,4 +1798,14 @@ color: #ffffff ;
       margin-bottom: 40px;
     }
   }
+  @media (max-width: 768px) {
+    .container3 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .wellness-container {
+        width: 100%;
+    }
+}
   
