@@ -2119,30 +2119,37 @@
     This Module delivers deep insights into jobs and workflows, with a specific emphasis on the extract job. You can inquire about any aspect of the extract workflow, including its current job status, the count of tables successfully loaded, and the number of tables still awaiting loading. The Extract Job section also provides information about the source system and details of jobs, allowing you to review the list of tables being loaded for a specific system. Serving as the first critical stage in data processing within the Medallion Architecture, the extract job moves data from on-premises source systems to the Bronze Layer, laying the foundation for secure, scalable, and high-performance data integration. 
     
      </p>
-     <div class="containers">
+     <div class="containers" style="margin-top: 20px;">
         <div style="display: flex;padding-left: 30%;
     padding-right: 30%; ">
         <div class="column">
+            <div class="card" style="min-width: 280px; padding: 20px; min-height: 515px;">
+            <!-- <div style="border: #000; border-radius:4%;"> -->
             <div class="box">Source System</div>
-            <div class="list-container">
+            <div class="list-container" style="margin-left: -20px;margin-right: -20px;">
                 <ul>
-                    <li>SQL Server</li>
-                    <li>PostgreSQL</li>
-                    <li>Oracle</li>
-                    <li>MySQL</li>
+                    <li style="width: 100%;">SQL Server</li>
+                    <li style="width: 100%;">PostgreSQL</li>
+                    <li style="width: 100%;">Oracle</li>
+                    <li style="width: 100%;">MySQL</li>
                 </ul>
             </div>
         </div>
+    
+        </div>
         <div class="arrow"></div>
         <div class="column">
+            <div class="card" style="min-width: 280px;padding: 20px;min-height: 515px;">
+
             <div class="box">Target System</div>
-            <div class="list-container">
+            <div class="list-container" style="margin-left: -20px;margin-right: -20px;">
                 <ul>
-                    <li>Microsoft Fabric Lakehouse </li>
-                    <li>SQL-based Data Warehouses </li>
+                    <li style="width: 100%;">Microsoft Fabric Lakehouse </li>
+                    <li style="width: 100%;">SQL-based Data Warehouses </li>
                     
                 </ul>
             </div>
+        </div>
         </div>
     </div>
   </div>
