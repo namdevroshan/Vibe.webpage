@@ -308,6 +308,9 @@ font-size: 3rem;
 color: #267CFC;
 margin: 0;
 }
+.hero-content p{
+    font-size: 1rem;
+}
 
 @media (min-width: 768px) {
 .hero h1 {
