@@ -1619,12 +1619,11 @@ color: #ffffff ;
     border-color: transparent transparent transparent #267CFC;
     transform: rotate(0deg); /* Removes the rotation so it points to the right */
 }
-.card{
+.cards{
     min-width: 280px; 
     min-height: 515px;
     padding: 20px;
-    border:3px solid #000;
-    border-radius: 10px;
+    
 }
 .list-container {
     margin-top: 10px;
@@ -1693,7 +1692,7 @@ color: #ffffff ;
         align-items: center;
         width: 100%;
     }
-    .card {
+    .cards {
         min-width: 80%;
         max-width: 80%;
     }
@@ -1720,12 +1719,13 @@ color: #ffffff ;
   .wellness-header {
     text-align: center;
     color: #267CFC;
-    margin-top: 200px;
+
+    /* margin-top: 200px; */
   }
 
   .wellness-header h1 {
     font-size: 28px;
-    line-height: 1.2;
+    /* line-height: 1.2; */
   }
 
   .wellness-steps {
@@ -1763,6 +1763,7 @@ color: #ffffff ;
     font-size: 18px;
     font-weight: 400;
     text-align: left;
+    margin-top: 23px;
   }
 
   .step-description p {
@@ -1772,7 +1773,7 @@ color: #ffffff ;
   }
 
   /* Responsive Styles */
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .wellness-container {
       flex-direction: row;
     }
@@ -1794,3 +1795,4 @@ color: #ffffff ;
       margin-bottom: 40px;
     }
   }
+  
