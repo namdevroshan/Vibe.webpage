@@ -1674,7 +1674,6 @@ color: #ffffff ;
 }
 @media (max-width: 768px) {
     .content {
-        flex-direction: column;
         align-items: center;
     }
 
@@ -1683,67 +1682,86 @@ color: #ffffff ;
     }
 }
 
-@media (max-width: 480px) {
-    .containers {
-        padding: 10px;
-    }
-    .content {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .cards {
-        min-width: 80%;
-        max-width: 80%;
-    }
-    .arrow {
-        font-size: 1.5rem;
-        margin: 10px 0;
-        transform: rotate(90deg);
-    }
-}
-.container3{
+.responsive-wrapper {
     display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 30%;
 }
 
+.cards {
+    width: 100%;
+    max-width: 350px; /* Controls max width */
+    padding: 20px;
+    min-height: 515px;
+    /* border: 1px solid #ddd;
+    border-radius: 8px; */
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .responsive-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10%; /* Reduce padding */
+    }
+
+    .cards {
+        min-width: auto;
+        width: 100%;
+        max-width: 280px;
+        min-height: auto;
+    }
+}
+/* Main container for sections */
+.container3 {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Wellness container styles */
 .wellness-container {
-    margin: 60px;
+    margin: 30px;
     background-color: #ffffff;
     border-radius: 16px;
     display: flex;
     position: relative;
     flex-direction: column;
-    width: 100%;
+    width: 48%; /* Adjusted for large screens */
     max-width: 900px;
     padding: 30px;
     overflow: hidden;
-  }
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-  .wellness-header {
+/* Header styles */
+.wellness-header {
     text-align: center;
     color: #267CFC;
+}
 
-    /* margin-top: 200px; */
-  }
-
-  .wellness-header h1 {
+.wellness-header h1 {
     font-size: 28px;
-    /* line-height: 1.2; */
-  }
+}
 
-  .wellness-steps {
+/* Steps container */
+.wellness-steps {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
 
-  .wellness-step {
+/* Individual step */
+.wellness-step {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
-  }
+}
 
-  .step-circle {
+/* Step circle */
+.step-circle {
     background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
     color: white;
     border-radius: 50%;
@@ -1756,56 +1774,247 @@ color: #ffffff ;
     font-weight: bold;
     margin-right: 15px;
     margin-top: 13px;
-  }
+    font-size: 20px;
+}
 
-  .step-description {
+/* Step description */
+.step-description {
     color: #333;
-  }
+}
 
-  .step-description h3 {
+.step-description h3 {
     font-size: 18px;
     font-weight: 400;
     text-align: left;
     margin-top: 23px;
-  }
+}
 
-  .step-description p {
+.step-description p {
     margin-top: 5px;
     font-size: 14px;
     color: #666;
-  }
+}
 
-  /* Responsive Styles */
-  @media (max-width: 768px) {
+/* ✅ Responsive Styling */
+@media (max-width: 1024px) {
+    /* Reduce width for tablets */
     .wellness-container {
-      flex-direction: row;
+        width: 80%;
     }
+}
 
-    .wellness-header {
-      width: 200px;
-      text-align: left;
-    }
-
-    .wellness-header h1 {
-      font-size: 36px;
-    }
-
-    .wellness-steps {
-      margin-left: 40px;
-    }
-
-    .wellness-step {
-      margin-bottom: 40px;
-    }
-  }
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+    /* Make containers stack on mobile */
     .container3 {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
 
     .wellness-container {
-        width: 100%;
+        width: 90%;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .wellness-header h1 {
+        font-size: 24px;
+    }
+
+    .step-circle {
+        height: 45px;
+        width: 45px;
+        font-size: 18px;
+    }
+
+    .step-description h3 {
+        font-size: 16px;
     }
 }
-  
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .wellness-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .wellness-header h1 {
+        font-size: 20px;
+    }
+
+    .step-circle {
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+    }
+
+    .step-description h3 {
+        font-size: 14px;
+    }
+}
+.container3 {
+    display: flex;
+     /* Allows wrapping */
+    justify-content: space-between; /* Space them out */
+}
+
+/* Adjust for tablet screens */
+@media (max-width: 1024px) {
+    .container3 {
+        flex-direction: row;
+        align-items: center;
+    }
+   
+    .wellness-container {
+        width: 80%;
+    }
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wellness-container {
+        width: 90%;
+        /* margin: 20px auto; */
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .wellness-container {
+        width: 95%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left Section */
+.info-section {
+    background-color: lightslategray;
+    padding: 50px;
+    color: white;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-box img {
+    width: 70px;
+    margin-right: 15px;
+}
+
+.main-heading {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+h4 {
+    color: #ffdd57;
+    margin-top: 20px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.info-list li {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Right Section */
+.form-section {
+    background-color: #f9f7ff;
+    padding: 50px;
+}
+
+.form-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.label-text {
+    font-weight: bold;
+    color: #333;
+}
+
+.input-field, .dropdown-field {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .custom-container {
+        flex-direction: column;
+    }
+
+    .info-section, .form-section {
+        padding: 30px;
+    }
+
+    .main-heading {
+        font-size: 18px;
+    }
+}
