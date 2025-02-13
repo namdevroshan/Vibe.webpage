@@ -1915,7 +1915,8 @@ color: #ffffff ;
 
 
 .custom-container {
-    max-width: 1200px;
+    max-width: 1600px;
+    min-height: 700px;
     margin: 40px auto;
     background-color: #fff;
     border-radius: 10px;
@@ -1925,7 +1926,7 @@ color: #ffffff ;
 
 /* Left Section */
 .info-section {
-    background-color: lightslategray;
+    background-color: rgb(255, 255, 255);
     padding: 50px;
     color: white;
 }
@@ -1943,13 +1944,15 @@ color: #ffffff ;
 
 .main-heading {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 450;
     color: white;
+    font-size: 1.9rem;
 }
 
 h4 {
     color: #ffdd57;
     margin-top: 20px;
+    font-size: 1.8rem;
 }
 
 .info-list {
@@ -1960,7 +1963,7 @@ h4 {
 
 .info-list li {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 1.2rem;
     line-height: 1.6;
 }
 
@@ -1989,7 +1992,7 @@ h4 {
 }
 
 .submit-button {
-    background-color: #007bff;
+    background: linear-gradient(90deg, #E695CD, #A474E8, #65B3E1);
     color: white;
     padding: 12px;
     font-size: 16px;
